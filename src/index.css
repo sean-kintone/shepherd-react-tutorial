@@ -11,3 +11,60 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.timer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1%;
+  font-size: larger;
+  font-weight: bolder;
+}
+
+.button-clicker {
+  padding: 5%;
+}
+
+.button-clicker button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-size: xxx-large;
+}
+
+.button {
+  padding: .6rem 1.5rem;
+  margin: .4rem;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: .8rem;
+}
+
+.main-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.radio-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.grid-item {
+  background-color: rgba(99, 162, 226, 0.8);
+  border: 1px solid rgba(129, 41, 131, 0.8);
+  padding: 50px 0px;
+  font-size: 30px;
+  text-align: center;
+}
