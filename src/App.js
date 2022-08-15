@@ -1,6 +1,7 @@
 import React, { useContext, useState, useEffect } from 'react'
 import { ShepherdTour, ShepherdTourContext } from 'react-shepherd'
 import GridContent from './content.js'
+import postKintone from './post_kintone.js';
 import "shepherd.js/dist/css/shepherd.css";
 
 const tourOptions = {
@@ -118,6 +119,18 @@ function App() {
     );
   };
 
+  const UploadScore = () => {
+    const upload = () => {
+      console.log('button clicked');
+      postKintone(seconds);
+    }
+    return (
+      <button className="button" onClick={upload}>
+        Upload Score
+      </button>
+    );
+  };
+
   const reset = () => {
     setSeconds(0);
     setIsActive(true);
@@ -131,6 +144,7 @@ function App() {
         <div className='header'>
           <Button />
           <Timer />
+          <UploadScore />
         </div>
         <GridContent
           count={count}
