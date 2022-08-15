@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+**Say goodbye to lost users!**  
+Onboarding is a valuable feature for your App's first-time users. 💪
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Our free, live workshop will walk you through creating a Web Database App, setting up a React project, and developing a tutorial guiding users through the App.
 
-## Available Scripts
+🤫 _We also have a $25 Amazon gift card raffle at the end_ ~
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 📎 PREREQUISITES
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 📂 GET A KINTONE SUBDOMAIN (DATABASE)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Apply for a free developer license and subdomain. You can also read up on all things Kintone API & customization!
+* [bit.ly/KDP_NEW](http://bit.ly/KDP_NEW)
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🕒 EVENT SCHEDULE (IN PACIFIC TIME)
 
-### `npm run build`
+* 6:00 PM - Hello
+* 6:10 PM - Workshop Overview
+* 6:30 PM - Kintone App Setup
+* 7:00 PM - Live Code-along - Implement React Tour
+* 7:45 PM - Wrap Up and Q&A
+* 8:00 PM - Thank you & Survey Raffle
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🤔 What is Shepherd.JS?
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Shepherd is a free, open-source JavaScript library for guiding users through your App.
 
-### `npm run eject`
+Shepherd.JS is similar to other popular onboarding JS libraries such as Intro.JS and React Joyride but:
+* Unlike Intro.JS, Shepherd.JS is free for personal and commercial uses.
+* Unlike React Joyride, Shepherd.JS is not limited to React projects.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📺 CAN'T MAKE IT?
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Subscribe to our [YouTube channel](https://www.youtube.com/c/KintoneDeveloperProgram) to get notified when we post this workshop's recording!
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Also, check out our most popular workshops with this playlist:  
+[Popular Kintone Workshops - YouTube](https://www.youtube.com/playlist?list=PL_Mf7E0DfF049YIoAz8jAFUx7i6b77O0G)
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## ⚙️ WHAT IS KINTONE?
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Kintone is a no-code/low-code cloud platform for teams to quickly & easily share and collaborate on their data.
 
-### Code Splitting
+You can add JavaScript, CSS, &/or HTML to enhance the front-end UI/UX of a Kintone App. This can include features such as maps, buttons, and color-coding.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Read up on how to customize and develop on the Kintone platform at [kintone.dev](https://kintone.dev/)
