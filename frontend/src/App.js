@@ -9,12 +9,9 @@ import "shepherd.js/dist/css/shepherd.css";
 function App() {
 
   const [count, setCount] = useState(0);
-  const [seconds, setSeconds] = useState(0);
-  const [isActive, setIsActive] = useState(true);
   const [radioValue, setRadioValue] = useState("");
   const [onboardingPercent, setOnboardingPercent] = useState(0);
   const [fruits, setFruits] = useState("");
-  const [isCompleted, setIsCompleted] = useState("No");
   const [stepsComplete, setStepsComplete] = useState(false);
 
   useEffect(() => {
@@ -24,37 +21,6 @@ function App() {
       setStepsComplete(false);
     }
   }, [count, fruits, radioValue]);
-
-  const Timer = () => {
-    function toggle() {
-      setIsActive(!isActive);
-    }
-
-    useEffect(() => {
-      let interval = null;
-      if (isActive) {
-        interval = setInterval(() => {
-          setSeconds(seconds => seconds + 1);
-        }, 1000);
-      } else if (!isActive && seconds !== 0) {
-        clearInterval(interval);
-      }
-      return () => clearInterval(interval);
-    }, []);
-
-
-    return (
-      <div className="timer">
-        {seconds}s
-        <button className={`button button-primary button-primary-${isActive ? 'active' : 'inactive'}`} onClick={toggle}>
-          {isActive ? 'Pause' : 'Start'}
-        </button>
-        <button className="button" onClick={reset}>
-          Reset
-        </button>
-      </div>
-    );
-  };
 
   const tourOptions = {
     defaultStepOptions: {
@@ -145,31 +111,19 @@ function App() {
     );
   }
 
-  const uploadStatus = () => {
-    console.log('button clicked');
+  const uploadStatus = async () => {
     let onboardingStatus = {
-      'completed': isCompleted,
+      'completed': stepsComplete ? "Yes" : "No",
       'percent': onboardingPercent
     }
     PostRecord(onboardingStatus);
   };
-
-  const reset = () => {
-    setSeconds(0);
-    setIsActive(true);
-    setCount(0);
-    setFruits("");
-    setOnboardingPercent(0);
-    setIsCompleted(false);
-  }
 
   return (
     <div>
       <ShepherdTour steps={steps} tourOptions={tourOptions}>
         <div className='header'>
           <Button />
-          <Timer />
-          <button onClick={uploadStatus}>hi</button>
         </div>
         <GridContent
           count={count}
@@ -179,8 +133,8 @@ function App() {
           setRadioValue={setRadioValue}
           chest={Chest}
           openChest={OpenChest}
-          setIsCompleted={setIsCompleted}
           stepsComplete={stepsComplete}
+          uploadStatus={uploadStatus}
         />
       </ShepherdTour>
     </div>

@@ -11,15 +11,16 @@ function GridContent(props) {
   const setFruits = props.setFruits;
   const stepsComplete = props.stepsComplete;
   const setRadioValue = props.setRadioValue;
-  const setIsCompleted = props.setIsCompleted;
+  const uploadStatus = props.uploadStatus;
   const [treasureClicked, setTreasureClicked] = useState(false);
 
-  const openTreasure = () => {
+  const openTreasure = async () => {
     if (stepsComplete) {
       setTreasureClicked(true);
-      setIsCompleted(true);
+      uploadStatus();
     } else {
       alert("Wrong steps!");
+      uploadStatus();
     }
   }
 
