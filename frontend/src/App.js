@@ -179,6 +179,7 @@ function App() {
           setRadioValue={setRadioValue}
           chest={Chest}
           openChest={OpenChest}
+          setIsCompleted={setIsCompleted}
           stepsComplete={stepsComplete}
         />
       </ShepherdTour>

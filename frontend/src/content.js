@@ -11,12 +11,13 @@ function GridContent(props) {
   const setFruits = props.setFruits;
   const stepsComplete = props.stepsComplete;
   const setRadioValue = props.setRadioValue;
-
+  const setIsCompleted = props.setIsCompleted;
   const [treasureClicked, setTreasureClicked] = useState(false);
 
   const openTreasure = () => {
     if (stepsComplete) {
       setTreasureClicked(true);
+      setIsCompleted(true);
     } else {
       alert("Wrong steps!");
     }
