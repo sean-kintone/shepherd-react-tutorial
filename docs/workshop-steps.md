@@ -17,6 +17,7 @@
       - [Steps](#steps)
         - [Step 1](#step-1)
       - [Button Config](#button-config)
+    - [Add a Treasure Chest Logic Check](#add-a-treasure-chest-logic-check)
   - [Refactor](#refactor)
   - [Check Your Work](#check-your-work)
 <!-- markdownlint-enable MD007 -->
@@ -404,6 +405,50 @@ We've filled out the first step in our three step tour, try to fill out steps 2 
     },
   ];
 ```
+
+### Add a Treasure Chest Logic Check
+
+Since we've created a fun puzzle for our users, and guided them through it with a ShepherdJS tour, it's time to make sure they can actually open the treasure chest.
+In React, remember that we can use the `useEffect` hook, in order to run functions when certain conditions are met. In short, we want the treasure chest to *become openable* when the user meets our conditions.
+
+```jsx
+  useEffect(() => {
+    //Logic for Opening Treasure
+  }, []);
+```
+We start out with an empty useEffect. First, let's add in some logic for our puzzle. We want to check if each of the reactive variables (our fruits, number clicker, and radio button) meets our conditions:
+
+```jsx
+    if (fruits === 'fig' && count === 7 && radioValue === 'two') {
+      //Conditions are met so open the treasure chest
+    } else {
+      // Display an error message?
+    }
+```
+
+When fig, 7, and the option two have been selected, we can set our `stepsComplete` hook to `true` via our setter hook:
+
+```jsx
+  useEffect(() => {
+    if (fruits === 'fig' && count === 7 && radioValue === 'two') {
+      setStepsComplete(true);
+    } else {
+      setStepsComplete(false);
+    }
+  }, []);
+```
+Here comes the real magic of `useEffect` however. We can specify *when* we want this function to fire, by placing variables in the `dependency array` at the end of our hook. In our case, we want to re-check the treasure chest, whenever some of our conditions change, aka our `fruits`, `count`, or `radioValue`.
+
+```jsx
+  useEffect(() => {
+    if (fruits === 'fig' && count === 7 && radioValue === 'two') {
+      setStepsComplete(true);
+    } else {
+      setStepsComplete(false);
+    }
+  }, [count, fruits, radioValue]);
+```
+Now, whenever one of these variables changes, our `useEffect` hook will fire and check our treasure box logic for us. Very cool.
 
 ## Refactor
 
