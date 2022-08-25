@@ -28,6 +28,7 @@ function GridContent(props) {
     <div className="main-grid">
       <div className="grid-item"></div>
       <div className="grid-item">
+        {/* TODO */}
         <div className="fruits">
         </div>
       </div>
@@ -38,6 +39,7 @@ function GridContent(props) {
       <div className="grid-item"></div>
       <div className="grid-item"></div>
       <div className="grid-item">
+                {/* TODO */}
         <div className="button-clicker">
         </div>
       </div>
@@ -48,10 +50,11 @@ function GridContent(props) {
       <div className="grid-item"></div>
       <div className="grid-item"></div>
       <div className="grid-item"></div>
-      <div className="grid-item">
-      </div>
+      <div className="grid-item"></div>
+              {/* TODO */}
       <div className="grid-item"></div>
       <div className="grid-item"></div>
+              {/* TODO */}
       {treasureClicked ? (
         <div className="grid-item"></div>
       ) : (

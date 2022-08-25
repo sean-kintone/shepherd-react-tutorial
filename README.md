@@ -165,6 +165,3 @@ _@kintone/customize-uploader not working?_ Let's try the following:
   * ❌ Incorrect Format: `https://example.kintone.com/` or `example.kintone.com`
 * ⚠️ Re-run the npm commands after saving the .env file
 * ⚙️ Details: [Create a `.env` file](#create-a-env-file)
-
-(3) Verify your customize-manifest.json was updated with the correct App ID
-* ⚙️ Details: [Input the App ID](#input-the-app-id)

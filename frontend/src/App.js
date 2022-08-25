@@ -14,6 +14,7 @@ function App() {
   const [fruits, setFruits] = useState("");
   const [stepsComplete, setStepsComplete] = useState(false);
 
+  //TODO
   useEffect(() => {
     //Logic for Opening Treasure
   }, []);
@@ -27,10 +28,12 @@ function App() {
     useModalOverlay: true
   };
 
+  //TODO
   const buttonConfig = [
     // Objects for our Tour 'Next' and 'Previous' buttons
   ]
 
+  //TODO
   const steps = [
     // Our Tour Logic. We need to specify:
     // id
