@@ -44,6 +44,19 @@ Open the `shepherd-react-tutorial` folder in [VS Code](https://code.visualstudio
 code .
 ```
 
+### frontend & backend folders
+Inside there should be two folders: `frontend` & `backend`
+
+1. Open a terminal per folder ~
+1. From inside the folders, download the required packages with `npm install`.
+
+|                      | Terminal 1 - Frontend  🌞                          | Terminal 2 - Backend  🌚                          |
+| -------------------- | ------------------------------------------------- | ------------------------------------------------ |
+| Go inside the folder | `cd ~/Downloads/shepherd-react-tutorial/frontend` | `cd ~/Downloads/shepherd-react-tutorial/backend` |
+| What is inside?      | Code for the React App                            | Code for the Express server                      |
+| Install packages     | `npm install`                                     | `npm install`                                    |
+| To run the scripts   | `npm start`                                       | `npm start`                                      |
+
 ## Get Your Free Kintone Database
 
 [bit.ly/KDP_NEW](http://bit.ly/KDP_NEW)
