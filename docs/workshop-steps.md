@@ -9,7 +9,7 @@
 * [Kintone API Token](#kintone-api-token)
 * [Create a `.env` File](#create-a-env-file)
 * [Edit content.js](#edit-contentjs)
-  * [Add some fun HTML Elements](#add-some-fun-html-elements)
+  * [Add Some Fun HTML Elements](#add-some-fun-html-elements)
     * [Fruits](#fruits)
     * [Number Clicker](#number-clicker)
     * [Radio Button](#radio-button)
@@ -21,7 +21,8 @@
   * [Add a Treasure Chest Logic Check](#add-a-treasure-chest-logic-check)
 * [Refactor](#refactor)
 * [Check Your Work](#check-your-work)
-* [Still got a problem?](#still-got-a-problem)
+* [What about the Backend?](#what-about-the-backend)
+* [Still Got a Problem?](#still-got-a-problem)
 
 ---
 
@@ -163,7 +164,7 @@ We have three goals for our coding today:
 2. Create a ShepherdJS tour to onboard our users
 3. Refactor our code to be a little bit neater.
 
-### Add some fun HTML Elements
+### Add Some Fun HTML Elements
 
 First, let's look at [content.js](../frontend/src/content.js).  
 We have set up a 25 x 25 grid, using CSS grid.
@@ -515,7 +516,13 @@ Is your code not working?
 
 Compare your [/frontend/src/App.js](../frontend/src/App.js), and [/frontend/src/content.js](../frontend/src/content.js) with the [completed versions folder](./finished_code/) to see if it is all written correctly.
 
-## Still got a problem?
+## What about the Backend?
+
+We are using the Express server setup as our backend. It is beyond the scope of this workshop but we went over it in our past React workshop:
+* YouTube: [React & REST API: GET & POST to a Web Database - July Workshop - YouTube](https://www.youtube.com/watch?v=LF2ue7ePgyU)
+* Codebase: [ahandsel/React_Workshop_by_Kintone](https://github.com/ahandsel/React_Workshop_by_Kintone)
+
+## Still Got a Problem?
 
 Check out README's [Debugging](../README.md#debugging---lets-fix-those-problems) section!
 
