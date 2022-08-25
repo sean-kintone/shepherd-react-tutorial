@@ -299,7 +299,7 @@ Now that we have a fun app to play with, let's make a guided tour for our users 
 
 ### Build a Shepherd JS Tour
 
-We'll be referencing the [ShepherdJS documentation](https://shepherdjs.dev/docs/tutorial-02-usage.html), which tells us all we need to create steps for our workshop. Our steps need an ID, which HTML element we'll be attaching to, some buttons, a message, and finally a function which updates our tour progress, so we can keep track of it on our kintone app!
+We'll be referencing the [ShepherdJS documentation](https://shepherdjs.dev/docs/tutorial-02-usage.html), which tells us all we need to create steps for our workshop. Our steps need an ID, which HTML element we'll be attaching to, some buttons, a message, and finally a function which updates our tour progress, so we can keep track of it on our Kintone app!
 
 From [./content.js](../frontend/src/content.js):
 
