@@ -21,7 +21,6 @@
   - [Check Your Work](#check-your-work)
 <!-- markdownlint-enable MD007 -->
 
-
 ## Get Started
 
 First, let's download the [sean-kintone/shepherd-react-tutorial](https://github.com/sean-kintone/shepherd-react-tutorial) Repo and go inside the folder.
@@ -127,9 +126,7 @@ We will use the variables, `count`, `radioValue`, `fruits` etc, and set them acr
 We have three goals for our coding today:
 
 1. Add some fun HTML Elements to guide our users through
-
 2. Create a ShepherdJS tour to onboard our users
-
 3. Refactor our code to be a little bit neater.
 
 ### Add some fun HTML Elements
@@ -243,14 +240,6 @@ In the form's `onChange`, we set `radioValue` to whatever was clicked, via our `
 
 Lastly, we need to display our treasure chests. If we have met the criteria in our app, we should be able to open the treasure chest `onClick`. Otherwise, we should display a closed treasure chest.
 
-```jsx
-      {treasureClicked ? (
-        <div className="grid-item"><OpenChest /></div>
-      ) : (
-        <div className="grid-item" onClick={openTreasure}><Chest /></div>
-      )}
-```
-
 Here we use a `ternary` operator, the `?` seen above. This is just a fancy way of writing an `if` statement in React, and is commonly used to conditionally display content. We could also re-write the above code like so:
 
 ```jsx
@@ -270,40 +259,6 @@ Now that we have a fun app to play with, let's make a guided tour for our users 
 
 We'll be referencing the [ShepherdJS documentation](https://shepherdjs.dev/docs/tutorial-02-usage.html), which tells us all we need to create steps for our workshop. Our steps need an ID, which HTML element we'll be attaching to, some buttons, a message, and finally a function which updates our tour progress, so we can keep track of it on our kintone app!
 
-#### Steps
-
-Our app will have three steps in order to open our treasure box:
-
-1. Selecting `option 2` from our radio buttons
-2. Clicking our `number clicker` 7 times
-3. Selecting 'fig' from our `fruits` selector.
-
-##### Step 1
-
-```jsx
-  const steps = [
-    {
-      id: '1',
-      attachTo: { element: '.radio-buttons', on: 'right' },
-      buttons: buttonConfig,
-      scrollTo: true,
-      cancelIcon: {
-        enabled: true,
-      },
-      title: 'Step 1!',
-      text: ['Click Option 2'],
-      beforeShowPromise: function () {
-        return new Promise(function (resolve) {
-          setOnboardingPercent(33);
-          resolve();
-        });
-      },
-    },
-  ];
-```
-The `id` parameter is just for internal tracking. It can be used to return or skip to certain steps via code. We won't be using it directly today.
-
-The `attachTo` parameter tells our tour where our dialog boxes attach to. The first step, is for our radio buttons, which have a `className` of `radio-buttons`. 
 
 From [./content.js](../frontend/src/content.js):
 ```jsx
