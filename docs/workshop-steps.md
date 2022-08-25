@@ -19,9 +19,7 @@
     * [Button Config](#button-config)
   * [Add a Treasure Chest Logic Check](#add-a-treasure-chest-logic-check)
 * [Refactor](#refactor)
-* [Check Your Work](#check-your-work)
 * [What about the Backend?](#what-about-the-backend)
-* [Still Got a Problem?](#still-got-a-problem)
 
 ---
 
@@ -510,11 +508,8 @@ In principle, we will try to:
 2. Keep our constants in a constants folder
 3. Change hard-coded HTML etc into loops and smart-coded HTML, using the power of JSX.
 
-## Check Your Work
 
-Is your code not working?
 
-Compare your [/frontend/src/App.js](../frontend/src/App.js), and [/frontend/src/content.js](../frontend/src/content.js) with the [completed versions folder](./finished_code/) to see if it is all written correctly.
 
 ## What about the Backend?
 
@@ -522,11 +517,19 @@ We are using the Express server setup as our backend. It is beyond the scope of 
 * YouTube: [React & REST API: GET & POST to a Web Database - July Workshop - YouTube](https://www.youtube.com/watch?v=LF2ue7ePgyU)
 * Codebase: [ahandsel/React_Workshop_by_Kintone](https://github.com/ahandsel/React_Workshop_by_Kintone)
 
-## Still Got a Problem?
+---
+
+## Code Not Working?
+
+### Check Your Work <!-- omit in toc -->
+
+Compare your [/frontend/src/App.js](../frontend/src/App.js), and [/frontend/src/content.js](../frontend/src/content.js) with the [completed versions folder](./finished_code/) to see if it is all written correctly.
+
+### Still Got a Problem? <!-- omit in toc -->
 
 Check out README's [Debugging](../README.md#debugging---lets-fix-those-problems) section!
 
-And finally, post your Kintone customization questions over at our community forum:  
+And finally, post your Kintone questions over at our community forum:  
 [forum.kintone.dev](https://forum.kintone.dev/)
 
 Good luck coding! 💪
