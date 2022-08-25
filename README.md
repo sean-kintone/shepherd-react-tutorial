@@ -86,14 +86,22 @@ Confused? 🤔 → Check out the [Get the API Token](https://youtu.be/pRtfn-8cf_
 
 ## Create a `.env` File
 
-Using the [.env.example](.env.example) file as a temple, create a `.env` file that will contain your login credentials and the Kintone App's View ID.
+Using the [.env.example](.env.example) file as a template, create a `.env` file. Then input your Kintone credentials like the following:
 
-Here is what your `.env` might look like:
+### `.env` Template <!-- omit in toc -->
 
 ```txt
 SUBDOMAIN = ""
 APPID = ""
 APITOKEN = ""
+```
+
+### Example `.env` File <!-- omit in toc -->
+
+```txt
+SUBDOMAIN = "devevents"
+APPID = "1"
+APITOKEN = "dXNlckBleGFLtcGxlmNvbTpzZWNyZXQe9q3IhtcG"
 ```
 
 ### ⚠️ DO NOT DELETE THE [.env.example](.env.example) FILE!  <!-- omit in toc -->
