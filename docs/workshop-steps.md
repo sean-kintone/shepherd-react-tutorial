@@ -88,7 +88,16 @@ Your `Radio Button` settings should look like this (⚠️notice the field code 
 And your `Number` field settings should like as so:
 ![Number Field Settings](./images/1-3.png)
 
-Confused? 🤔 → Check out the [How to Create a Kintone Database App](https://youtu.be/pRtfn-8cf_I) video 📺
+Confused? 🤔 → Check out the gif below:
+
+<details>
+  <summary>Create a Kintone ShepherdJS Onboarding App Gif 📺</summary>
+
+  ![shepherd_CreateApp.gif](./images/shepherd_CreateApp.gif)
+
+</details>
+
+---
 
 ## Kintone API Token
 
