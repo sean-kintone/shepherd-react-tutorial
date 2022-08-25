@@ -167,10 +167,3 @@ _@kintone/customize-uploader not working?_ Let's try the following:
 
 (3) Verify your customize-manifest.json was updated with the correct App ID
 * ⚙️ Details: [Input the App ID](#input-the-app-id)
-
-### Uncaught Error: Target container is not a DOM element
-Verify that the Custom View (Gallery View) has the following HTML Code:
-
-```HTML
-<div id="root"></div>
-```
