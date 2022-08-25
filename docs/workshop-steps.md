@@ -1,26 +1,23 @@
 # Onboard like a PRO with Shepherd JS, React, and [Kintone Web Database](https://kintone.dev/en/)
 
-## Outline <!-- omit in toc --> <!-- markdownlint-disable MD007 -->
+## Outline <!-- omit in toc -->
 
-- [Onboard like a PRO with Shepherd JS, React, and Kintone Web Database](#onboard-like-a-pro-with-shepherd-js-react-and-kintone-web-database)
-  - [Get Started](#get-started)
-  - [Create a Kintone Web Database App](#create-a-kintone-web-database-app)
-  - [Create a `.env` file](#create-a-env-file)
-  - [Edit content.js](#edit-contentjs)
-    - [Add some fun HTML Elements](#add-some-fun-html-elements)
-      - [Fruits](#fruits)
-      - [Number Clicker](#number-clicker)
-      - [Radio Button](#radio-button)
-      - [Display a treasure chest](#display-a-treasure-chest)
-  - [Edit App.js](#edit-appjs)
-    - [Build a Shepherd JS Tour](#build-a-shepherd-js-tour)
-      - [Steps](#steps)
-        - [Step 1](#step-1)
-      - [Button Config](#button-config)
-    - [Add a Treasure Chest Logic Check](#add-a-treasure-chest-logic-check)
-  - [Refactor](#refactor)
-  - [Check Your Work](#check-your-work)
-<!-- markdownlint-enable MD007 -->
+* [Get Started](#get-started)
+* [Create a Kintone Web Database App](#create-a-kintone-web-database-app)
+* [Create a `.env` file](#create-a-env-file)
+* [Edit content.js](#edit-contentjs)
+  * [Add some fun HTML Elements](#add-some-fun-html-elements)
+    * [Fruits](#fruits)
+    * [Number Clicker](#number-clicker)
+    * [Radio Button](#radio-button)
+    * [Display a treasure chest](#display-a-treasure-chest)
+* [Edit App.js](#edit-appjs)
+  * [Build a Shepherd JS Tour](#build-a-shepherd-js-tour)
+    * [Steps](#steps)
+    * [Button Config](#button-config)
+  * [Add a Treasure Chest Logic Check](#add-a-treasure-chest-logic-check)
+* [Refactor](#refactor)
+* [Check Your Work](#check-your-work)
 
 ## Get Started
 
@@ -55,8 +52,8 @@ npm start
 Let's create a **ShepherdJS Onboarding** Kintone App!  
 This will keep track of two metrics for visitors to our site:
 
-1) Did Users complete the task?
-2) Did Users finish our onboarding?
+1. Did users complete the task?
+1. Did users finished our onboarding?
 
 Here are the required fields & their configurations for our workshop:
 
