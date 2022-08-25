@@ -1,6 +1,6 @@
 # Onboard Users Like a Wizard 🧙 with Shepherd.JS -- React Basics Tutorials
 
-![ShepherdJS Banner](./docs/img/ShepherdJS_Banner.png)
+![ShepherdJS Banner](./docs/images/ShepherdJS_Banner.png)
 
 **Say goodbye to lost users!**  
 Onboarding is a valuable feature for your App's first-time users. 💪
