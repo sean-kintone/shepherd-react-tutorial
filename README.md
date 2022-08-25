@@ -68,7 +68,7 @@ Confused? 🤔 → Check out the [Get the API Token](https://youtu.be/pRtfn-8cf_
 
 ---
 
-## Create a `.env` file
+## Create a `.env` File for Your Credentials
 
 Using the [.env.example](.env.example) file as a temple, create a `.env` file that will contain your login credentials and the Kintone App's View ID.
 
