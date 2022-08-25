@@ -15,8 +15,12 @@ function App() {
   const [stepsComplete, setStepsComplete] = useState(false);
 
   useEffect(() => {
-    //Logic for Opening Treasure
-  }, []);
+    if (fruits === 'fig' && count === 7 && radioValue === 'two') {
+      setStepsComplete(true);
+    } else {
+      setStepsComplete(false);
+    }
+  }, [count, fruits, radioValue]);
 
   const tourOptions = {
     defaultStepOptions: {
@@ -28,20 +32,73 @@ function App() {
   };
 
   const buttonConfig = [
-    // Objects for our Tour 'Next' and 'Previous' buttons
+    {
+      classes: 'shepherd-button-primary',
+      text: 'Back',
+      type: 'back',
+    },
+    {
+      classes: 'shepherd-button-primary',
+      text: 'Next',
+      type: 'next',
+    }
   ]
 
   const steps = [
-    // Our Tour Logic. We need to specify:
-    // id
-    // where to attach To
-    // our buttons
-    // Do we highlight?
-    // Do we scrollTo?
-    // Is there a cancelIcon?
-    // Our step title
-    // Our Step text
-    // see here: https://shepherdjs.dev/docs/tutorial-02-usage.html
+    {
+      id: 'intro',
+      beforeShowPromise: function () {
+        return new Promise(function (resolve) {
+          setOnboardingPercent(33);
+          resolve();
+        });
+      },
+      attachTo: { element: '.radio-buttons', on: 'right' },
+      buttons: buttonConfig,
+      highlightClass: 'highlight',
+      scrollTo: true,
+      cancelIcon: {
+        enabled: true,
+      },
+      title: 'Step 1!',
+      text: ['Click Option 2'],
+    },
+    {
+      id: '2',
+      beforeShowPromise: function () {
+        return new Promise(function (resolve) {
+          setOnboardingPercent(66);
+          resolve();
+        });
+      },
+      attachTo: { element: '.button-clicker', on: 'right' },
+      buttons: buttonConfig,
+      highlightClass: 'highlight',
+      scrollTo: true,
+      cancelIcon: {
+        enabled: true,
+      },
+      title: 'Step 2!',
+      text: ['Click Here 7 Times'],
+    },
+    {
+      id: '3',
+      beforeShowPromise: function () {
+        return new Promise(function (resolve) {
+          setOnboardingPercent(100);
+          resolve();
+        });
+      },
+      attachTo: { element: '.fruits', on: 'right' },
+      buttons: buttonConfig,
+      highlightClass: 'highlight',
+      scrollTo: true,
+      cancelIcon: {
+        enabled: true,
+      },
+      title: 'Step 3!',
+      text: ['Pick Fig'],
+    },
   ];
 
   function Button() {
