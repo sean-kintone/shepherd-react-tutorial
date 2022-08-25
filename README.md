@@ -9,9 +9,10 @@ Our free, live workshop will walk you through creating a Web Database App, setti
 
 ## Outline <!-- omit in toc -->
 * [Get Started](#get-started)
-* [📎 PREREQUISITES](#-prerequisites)
-  * [🚀 Getting your FREE Kintone Database](#-getting-your-free-kintone-database)
-* [Create a `.env` file](#create-a-env-file)
+* [Get Your Free Kintone Database](#get-your-free-kintone-database)
+* [Create a Kintone Web Database App](#create-a-kintone-web-database-app)
+* [Kintone API Token](#kintone-api-token)
+* [Create a `.env` File for Your Credentials](#create-a-env-file-for-your-credentials)
 * [🤔 What is Shepherd.JS?](#-what-is-shepherdjs)
 * [⚙️ What is Kintone?](#️-what-is-kintone)
 * [Debugging - Let's Fix Those Problems 💪](#debugging---lets-fix-those-problems-)
