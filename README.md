@@ -49,7 +49,20 @@ npm install -g @kintone/customize-uploader
 
 ---
 
+## Create a `.env` file
 
+Using the [.env.example](.env.example) file as a temple, create a `.env` file that will contain your login credentials and the Kintone App's View ID.
+
+Here is what your `.env` might look like:
+
+```txt
+SUBDOMAIN = ""
+APPID = ""
+APITOKEN = ""
+```
+
+### ⚠️ DO NOT DELETE THE [.env.example](.env.example) FILE!  <!-- omit in toc -->
+[.env.example](.env.example) is used by env-cmd to verify that `.env` file is correctly configured.
 
 ---
 
@@ -61,6 +74,7 @@ Shepherd.JS is similar to other popular onboarding JS libraries such as Intro.JS
 * Unlike Intro.JS, Shepherd.JS is free for personal and commercial uses.
 * Unlike React Joyride, Shepherd.JS is not limited to React projects.
 
+## ⚙️ What is Kintone?
 
 Kintone is a no-code/low-code cloud platform for teams to quickly & easily share and collaborate on their data.
 
