@@ -64,7 +64,7 @@ Inside there should be two folders: `frontend` & `backend`
 
 |                                                                                         |                                                                                                                   |
 | --------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| ![Step 1: Fill out the Kintone Developer license sign up form](./docs/img/SignUp-1.png) | ![Step 2: Email address will be the login name & the subdomain will be your unique link](./docs/img/SignUp-2.png) |
+| ![Step 1: Fill out the Kintone Developer license sign up form](./docs/images/SignUp-1.png) | ![Step 2: Email address will be the login name & the subdomain will be your unique link](./docs/images/SignUp-2.png) |
 
 ## Create a Kintone Web Database App
 
