@@ -125,8 +125,8 @@ APPID = "1"
 APITOKEN = "abcdefghijklmnopqrstuvwxyz"
 ```
 
-### ⚠️ DO NOT DELETE THE [.env.example](.env.example) FILE!  <!-- omit in toc -->
-[.env.example](.env.example) is used by env-cmd to verify that `.env` file is correctly configured.
+### ⚠️ DO NOT DELETE THE [.env.example](../.env.example) FILE!  <!-- omit in toc -->
+[.env.example](../.env.example) is used by env-cmd to verify that `.env` file is correctly configured.
 
 ---
 
