@@ -18,9 +18,7 @@ Our free, live workshop will walk you through creating a Web Database App, setti
   * [What is Shepherd.JS?](#what-is-shepherdjs)
   * [What is Kintone?](#what-is-kintone)
 * [Debugging - Let's Fix Those Problems 💪](#debugging---lets-fix-those-problems-)
-  * [Errors related to .env](#errors-related-to-env)
   * [`npm install` command is not working](#npm-install-command-is-not-working)
-  * ["npm run upload" failed?](#npm-run-upload-failed)
 
 ---
 
@@ -161,16 +159,6 @@ Read up on how to customize and develop on the Kintone platform at [kintone.dev]
 
 Here is a rundown of common problems that may occur & their solutions!
 
-### Errors related to .env
-
-If you get one of the following error messages, then please verify your `.env` file has been correctly configured, and you have not modified the `.env.example`.
-
-* `Failed to find .env file at default paths: [./.env,./.env.js,./.env.json]`
-* `[webpack-cli] Error: Missing environment variable: KINTONE_BASE_URL`
-* `[webpack-cli] Error: Missing environment variable: KINTONE_USERNAME`
-* `[webpack-cli] Error: Missing environment variable: KINTONE_PASSWORD`
-* `[webpack-cli] Error: Missing environment variable: VIEW_ID`
-
 ### `npm install` command is not working
 
 1. Verify the Node.js & npm versions **inside** the `shepherd-react-tutorial` folder
@@ -178,17 +166,3 @@ If you get one of the following error messages, then please verify your `.env` f
 
 * Mac: `nodenv local 14.5.0`
 * Windows: `nvm use 14.5.0`
-
-### "npm run upload" failed?
-_@kintone/customize-uploader not working?_ Let's try the following:
-
-(1) Verify that customize uploader was installed globally
-* `npm install -g @kintone/customize-uploader`
-
-(2) Verify that the .env login info is correct (including the password)
-* ⚠️ Make sure your login info is inside `.env` file & **NOT** `.env.example` file!
-* ⚠️ Verify that KINTONE_BASE_URL input is correctly formatted:
-  * ✅ Correct Format: `https://example.kintone.com`
-  * ❌ Incorrect Format: `https://example.kintone.com/` or `example.kintone.com`
-* ⚠️ Re-run the npm commands after saving the .env file
-* ⚙️ Details: [Create a `.env` file](#create-a-env-file)
