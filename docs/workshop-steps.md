@@ -15,6 +15,7 @@
   - [Edit App.js](#edit-appjs)
     - [Build a Shepherd JS Tour](#build-a-shepherd-js-tour)
       - [Steps](#steps)
+        - [Step 1](#step-1)
       - [Button Config](#button-config)
   - [Refactor](#refactor)
   - [Check Your Work](#check-your-work)
@@ -67,6 +68,16 @@ Here are the required fields & their configurations for our workshop:
 | Number       | Percent Completed | `percent`   | This will show onboarding tour completion rate |
 
 Be sure to click the **Save** and **Activate App** buttons! 💪
+
+Your Kintone app should look like this, with one `Radio Button` field, and one `Number` field:
+
+![Kintone App Overview](images/1-1.png)
+
+Your `Radio Button` settings should look like this (⚠️notice the field code is lower case, `completed`, and your button options are Upper Case `'Yes'` and `'No'`⚠️):
+![Radio Button Settings](images/1-2.png)
+
+And your `Number` field settings should like as so:
+![Number Field Settings](images/1-3.png)
 
 Confused? 🤔 → Check out the [How to Create a Kintone Database App](https://youtu.be/pRtfn-8cf_I) video 📺
 
@@ -230,7 +241,7 @@ In the form's `onChange`, we set `radioValue` to whatever was clicked, via our `
 
 #### Display a treasure chest
 
-Lastly, we need to display our treasure chests. If we have met the criteria, we should be able to open the treasure chest `onClick`. Otherwise, we should display a closed treasure chest.
+Lastly, we need to display our treasure chests. If we have met the criteria in our app, we should be able to open the treasure chest `onClick`. Otherwise, we should display a closed treasure chest.
 
 ```jsx
       {treasureClicked ? (
@@ -253,16 +264,78 @@ Here we use a `ternary` operator, the `?` seen above. This is just a fancy way o
 
 ## Edit App.js
 
-Save your work and run kintone-customize-uploader by entering `npm run start` in your terminal!  
-Navigate to your app, create a record, write some Markdown, and click the publish button!
-
-See the [slides.pdf](../slides.pdf) for more info!
+Now that we have a fun app to play with, let's make a guided tour for our users in [/frontend/src/App.js](../frontend/src/App.js)
 
 ### Build a Shepherd JS Tour
 
+We'll be referencing the [ShepherdJS documentation](https://shepherdjs.dev/docs/tutorial-02-usage.html), which tells us all we need to create steps for our workshop. Our steps need an ID, which HTML element we'll be attaching to, some buttons, a message, and finally a function which updates our tour progress, so we can keep track of it on our kintone app!
+
 #### Steps
 
+Our app will have three steps in order to open our treasure box:
+
+1. Selecting `option 2` from our radio buttons
+2. Clicking our `number clicker` 7 times
+3. Selecting 'fig' from our `fruits` selector.
+
+##### Step 1
+
+```jsx
+  const steps = [
+    {
+      id: '1',
+      attachTo: { element: '.radio-buttons', on: 'right' },
+      buttons: buttonConfig,
+      scrollTo: true,
+      cancelIcon: {
+        enabled: true,
+      },
+      title: 'Step 1!',
+      text: ['Click Option 2'],
+      beforeShowPromise: function () {
+        return new Promise(function (resolve) {
+          setOnboardingPercent(33);
+          resolve();
+        });
+      },
+    },
+  ];
+```
+The `id` parameter is just for internal tracking. It can be used to return or skip to certain steps via code. We won't be using it directly today.
+
+The `attachTo` parameter tells our tour where our dialog boxes attach to. The first step, is for our radio buttons, which have a `className` of `radio-buttons`. 
+
+From [./content.js](../frontend/src/content.js):
+```jsx
+<div className="radio-buttons">
+```
+Also, we specify to attach to the `right` of our element. You can specify `top`, `bottom`, `left`, and `right`.
+
 #### Button Config
+
+Our buttons for our tour get re-used, so we've 'refactored' them to a separate variable:
+
+```jsx
+  const buttonConfig = [
+    {
+      classes: 'shepherd-button-primary',
+      text: 'Back',
+      type: 'back',
+    },
+    {
+      classes: 'shepherd-button-primary',
+      text: 'Next',
+      type: 'next',
+    }
+  ]
+```
+Lastly, and most important, we need to specify what our hints will display to guide our users through the app:
+
+```jsx
+      title: 'Step 1!',
+      text: ['Click Option 2'],
+```
+
 
 ## Refactor
 

@@ -47,57 +47,54 @@ function App() {
   const steps = [
     {
       id: 'intro',
-      beforeShowPromise: function () {
-        return new Promise(function (resolve) {
-          setOnboardingPercent(33);
-          resolve();
-        });
-      },
       attachTo: { element: '.radio-buttons', on: 'right' },
       buttons: buttonConfig,
-      highlightClass: 'highlight',
       scrollTo: true,
       cancelIcon: {
         enabled: true,
       },
       title: 'Step 1!',
       text: ['Click Option 2'],
-    },
-    {
-      id: '2',
       beforeShowPromise: function () {
         return new Promise(function (resolve) {
-          setOnboardingPercent(66);
+          setOnboardingPercent(33);
           resolve();
         });
       },
+    },
+    {
+      id: '2',
       attachTo: { element: '.button-clicker', on: 'right' },
       buttons: buttonConfig,
-      highlightClass: 'highlight',
       scrollTo: true,
       cancelIcon: {
         enabled: true,
       },
       title: 'Step 2!',
       text: ['Click Here 7 Times'],
-    },
-    {
-      id: '3',
       beforeShowPromise: function () {
         return new Promise(function (resolve) {
-          setOnboardingPercent(100);
+          setOnboardingPercent(66);
           resolve();
         });
       },
+    },
+    {
+      id: '3',
       attachTo: { element: '.fruits', on: 'right' },
       buttons: buttonConfig,
-      highlightClass: 'highlight',
       scrollTo: true,
       cancelIcon: {
         enabled: true,
       },
       title: 'Step 3!',
       text: ['Pick Fig'],
+      beforeShowPromise: function () {
+        return new Promise(function (resolve) {
+          setOnboardingPercent(100);
+          resolve();
+        });
+      },
     },
   ];
 
