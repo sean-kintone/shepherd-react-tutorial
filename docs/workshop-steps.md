@@ -1,7 +1,6 @@
 # Onboard like a PRO with Shepherd JS, React, and [Kintone Web Database](https://kintone.dev/en/)
 
 ## Outline <!-- omit in toc -->
-
 * [Get Started](#get-started)
   * [Inside backend](#inside-backend)
   * [Inside frontend](#inside-frontend)
@@ -75,7 +74,7 @@ Here are the required fields & their configurations for our workshop:
 
 | Field Type   | Field Name        | Field Code  | Note                                           |
 | ------------ | ----------------- | ----------- | ---------------------------------------------- |
-| Radio Button | Task Completed?    | `completed` | Options: `Yes` and `No`                        |
+| Radio Button | Task Completed?   | `completed` | Options: `Yes` and `No`                        |
 | Number       | Percent Completed | `percent`   | This will show onboarding tour completion rate |
 
 Be sure to click the **Save** and **Activate App** buttons! 💪
