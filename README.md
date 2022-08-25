@@ -49,14 +49,7 @@ npm install -g @kintone/customize-uploader
 
 ---
 
-## 🕒 EVENT SCHEDULE (IN PACIFIC TIME)
 
-* 6:00 PM - Hello
-* 6:10 PM - Workshop Overview
-* 6:30 PM - Kintone App Setup
-* 7:00 PM - Live Code-along - Implement React Tour
-* 7:45 PM - Wrap Up and Q&A
-* 8:00 PM - Thank you & Survey Raffle
 
 ---
 
@@ -68,18 +61,6 @@ Shepherd.JS is similar to other popular onboarding JS libraries such as Intro.JS
 * Unlike Intro.JS, Shepherd.JS is free for personal and commercial uses.
 * Unlike React Joyride, Shepherd.JS is not limited to React projects.
 
----
-
-## 📺 CAN'T MAKE IT?
-
-Subscribe to our [YouTube channel](https://www.youtube.com/c/KintoneDeveloperProgram) to get notified when we post this workshop's recording!
-
-Also, check out our most popular workshops with this playlist:  
-[Popular Kintone Workshops - YouTube](https://www.youtube.com/playlist?list=PL_Mf7E0DfF049YIoAz8jAFUx7i6b77O0G)
-
----
-
-## ⚙️ WHAT IS KINTONE?
 
 Kintone is a no-code/low-code cloud platform for teams to quickly & easily share and collaborate on their data.
 
