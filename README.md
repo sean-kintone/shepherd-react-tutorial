@@ -24,7 +24,8 @@ Our free, live workshop will walk you through creating a Web Database App, setti
 
 ## Get Started
 
-First, let's clone the [sean-kintone/shepherd-react-tutorial](https://github.com/sean-kintone/shepherd-react-tutorial) repo and go inside the folder.
+First, let's clone the [sean-kintone/shepherd-react-tutorial](https://github.com/sean-kintone/shepherd-react-tutorial) repo!  🚀  
+Then go inside the folder.
 
 Once you are inside the folder, let's install the dependencies!
 
