@@ -7,7 +7,7 @@
   * [Inside frontend](#inside-frontend)
 * [Create a Kintone Web Database App](#create-a-kintone-web-database-app)
 * [Kintone API Token](#kintone-api-token)
-* [Create a `.env` file](#create-a-env-file)
+* [Create a `.env` File](#create-a-env-file)
 * [Edit content.js](#edit-contentjs)
   * [Add some fun HTML Elements](#add-some-fun-html-elements)
     * [Fruits](#fruits)
@@ -99,20 +99,32 @@ To generate an API Token for a Kintone App:
 
 Confused? 🤔 → Check out the [Get the API Token](https://youtu.be/pRtfn-8cf_I?t=117) video clip 📺  
 
-## Create a `.env` file
+---
 
-Using the [.env.example](./../.env.example) file as a template, create a `.env` file that will contain your login credentials and API Token.
+## Create a `.env` File
 
-Here is what your `.env` might look like:
+Using the [.env.example](.env.example) file as a template, create a `.env` file. Then input your Kintone credentials like the following:
+
+### `.env` Template <!-- omit in toc -->
 
 ```txt
-SUBDOMAIN = "example"
-APPID = "1"
-APITOKEN = "fj3iaoJ1IFJ#*@(328jf3m3lwf"
+SUBDOMAIN = ""
+APPID = ""
+APITOKEN = ""
 ```
 
-⚠️ DO NOT DELETE THE [.env.example](./../.env.example) FILE!  
-[.env.example](./../.env.example) is used by env-cmd to verify that `.env` file is correctly configured.
+### Example `.env` File <!-- omit in toc -->
+
+```txt
+SUBDOMAIN = "devevents"
+APPID = "1"
+APITOKEN = "dXNlckBleGFLtcGxlmNvbTpzZWNyZXQe9q3IhtcG"
+```
+
+### ⚠️ DO NOT DELETE THE [.env.example](.env.example) FILE!  <!-- omit in toc -->
+[.env.example](.env.example) is used by env-cmd to verify that `.env` file is correctly configured.
+
+---
 
 ## Edit content.js
 
