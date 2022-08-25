@@ -301,6 +301,8 @@ Here we use a `ternary` operator, the `?` seen above. This is just a fancy way o
 }}
 ```
 
+---
+
 ## Edit App.js
 
 Now that we have a fun app to play with, let's make a guided tour for our users in [/frontend/src/App.js](../frontend/src/App.js)
@@ -509,6 +511,8 @@ useEffect(() => {
 
 Now, whenever one of these variables changes, our `useEffect` hook will fire and check our treasure box logic for us. Very cool.
 
+---
+
 ## Refactor
 
 Refactoring is always a tricky subject -- How much is too much? When should I refactor? Is my refactoring making the code easier or harder to understand? These questions help developers make your team's life easier.
@@ -517,6 +521,8 @@ In principle, we will try to:
 1. Separate our code into re-usable components
 2. Keep our constants in a constants folder
 3. Change hard-coded HTML etc into loops and smart-coded HTML, using the power of JSX.
+
+---
 
 
 
