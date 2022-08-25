@@ -109,7 +109,9 @@ APITOKEN = "dXNlckBleGFLtcGxlmNvbTpzZWNyZXQe9q3IhtcG"
 
 ---
 
-## 🤔 What is Shepherd.JS?
+## Appendix
+
+### What is Shepherd.JS?
 
 Shepherd is a free, open-source JavaScript library for guiding users through your App.
 
@@ -117,7 +119,7 @@ Shepherd.JS is similar to other popular onboarding JS libraries such as Intro.JS
 * Unlike Intro.JS, Shepherd.JS is free for personal and commercial uses.
 * Unlike React Joyride, Shepherd.JS is not limited to React projects.
 
-## ⚙️ What is Kintone?
+### What is Kintone?
 
 Kintone is a no-code/low-code cloud platform for teams to quickly & easily share and collaborate on their data.
 
