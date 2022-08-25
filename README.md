@@ -13,10 +13,15 @@ Our free, live workshop will walk you through creating a Web Database App, setti
 
 ## 📎 PREREQUISITES
 
-### 📂 GET A KINTONE SUBDOMAIN (DATABASE)
+### 🚀 Getting your FREE Kintone Database
 
-Apply for a free developer license and subdomain. You can also read up on all things Kintone API & customization!
-* [bit.ly/KDP_NEW](http://bit.ly/KDP_NEW)
+[bit.ly/KDP_NEW](http://bit.ly/KDP_NEW)
+* ⚡ Only use lowercase, numbers, & hyphens in your subdomain
+* ⚠ Do not use uppercase or special characters
+
+|                                             |                                             |
+| ------------------------------------------- | ------------------------------------------- |
+| ![Step 1: Fill out the Kintone Developer license sign up form](./docs/img/SignUp-1.png) | ![Step 2: Email address will be the login name & the subdomain will be your unique link](./docs/img/SignUp-2.png) |
 
 ---
 
