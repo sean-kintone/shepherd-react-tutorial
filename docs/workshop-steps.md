@@ -3,6 +3,8 @@
 ## Outline <!-- omit in toc -->
 
 * [Get Started](#get-started)
+  * [Inside backend](#inside-backend)
+  * [Inside frontend](#inside-frontend)
 * [Create a Kintone Web Database App](#create-a-kintone-web-database-app)
 * [Create a `.env` file](#create-a-env-file)
 * [Edit content.js](#edit-contentjs)
@@ -21,15 +23,22 @@
 
 ## Get Started
 
-First, let's download the [sean-kintone/shepherd-react-tutorial](https://github.com/sean-kintone/shepherd-react-tutorial) Repo and go inside the folder.
+First, clone the [sean-kintone/shepherd-react-tutorial](https://github.com/sean-kintone/shepherd-react-tutorial) repo!  🚀  
+Then go inside the folder.
 
 Once you are inside the folder, let's install the dependencies! Once for our backend, and again for our frontend!
 
 ```shell
+cd Downloads
+
 git clone https://github.com/sean-kintone/shepherd-react-tutorial
 
 cd shepherd-react-tutorial
+```
 
+### Inside backend
+
+```shell
 cd backend
 
 npm install
@@ -37,7 +46,7 @@ npm install
 npm start
 ```
 
-Make a new tab in your console and:
+### Inside frontend
 
 ```shell
 cd ../frontend
