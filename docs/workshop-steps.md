@@ -1,23 +1,21 @@
 # Onboard like a PRO with Shepherd JS, React, and [Kintone Web Database](https://kintone.dev/en/)
 
-## Outline <!-- omit in toc --> <!-- markdownlint-disable MD007 -->
+## Outline <!-- omit in toc -->
 
-- [Onboard like a PRO with Shepherd JS, React, and Kintone Web Database](#onboard-like-a-pro-with-shepherd-js-react-and-kintone-web-database)
-  - [Get Started](#get-started)
-  - [Create a Kintone Web Database App](#create-a-kintone-web-database-app)
-  - [Create a `.env` file](#create-a-env-file)
-  - [Edit content.js](#edit-contentjs)
-    - [Add some fun HTML Elements](#add-some-fun-html-elements)
-      - [Fruits](#fruits)
-      - [Number Clicker](#number-clicker)
-      - [Radio Button](#radio-button)
-  - [Edit App.js](#edit-appjs)
-    - [Build a Shepherd JS Tour](#build-a-shepherd-js-tour)
-      - [Steps](#steps)
-      - [Button Config](#button-config)
-  - [Refactor](#refactor)
-  - [Check Your Work](#check-your-work)
-<!-- markdownlint-enable MD007 -->
+* [Get Started](#get-started)
+* [Create a Kintone Web Database App](#create-a-kintone-web-database-app)
+* [Create a `.env` file](#create-a-env-file)
+* [Edit content.js](#edit-contentjs)
+  * [Add some fun HTML Elements](#add-some-fun-html-elements)
+    * [Fruits](#fruits)
+    * [Number Clicker](#number-clicker)
+    * [Radio Button](#radio-button)
+* [Edit App.js](#edit-appjs)
+  * [Build a Shepherd JS Tour](#build-a-shepherd-js-tour)
+    * [Steps](#steps)
+    * [Button Config](#button-config)
+* [Refactor](#refactor)
+* [Check Your Work](#check-your-work)
 
 
 ## Get Started
@@ -60,10 +58,10 @@ This will keep track of two metrics for visitors to our site:
 
 Here are the required fields & their configurations for our workshop:
 
-| Field Type   | Field Name           | Field Code  | Note                                           |
-| ------------ | -------------------- | ----------- | ---------------------------------------------- |
-| Radio Button | Task Completed | `completed` | Options: 'Yes' and 'No'                        |
-| Number       | Percent Completed    | `percent`   | This will show onboarding tour completion rate |
+| Field Type   | Field Name        | Field Code  | Note                                           |
+| ------------ | ----------------- | ----------- | ---------------------------------------------- |
+| Radio Button | Task Completed    | `completed` | Options: 'Yes' and 'No'                        |
+| Number       | Percent Completed | `percent`   | This will show onboarding tour completion rate |
 
 Be sure to click the **Save** and **Activate App** buttons! 💪
 
@@ -103,9 +101,7 @@ import PostRecord from './requests/postRecord.js';
 We have three goals for our coding:
 
 1. Add some fun HTML Elements to guide our users through
-
 2. Create a ShepherdJS tour to onboard our users
-
 3. Refactor our code to be a little bit neater.
 
 ### Add some fun HTML Elements
@@ -178,7 +174,7 @@ const body: PostBody = {
 }
 ```
 
-Continue to fill in the body parameters.  
+Continue to fill in the body parameters.
 
 #### Number Clicker
 
@@ -209,8 +205,6 @@ const body: PostBody = {
 
 And done! This should be good data to pass to our API call...  
 but we will need a button for our users to click to start the process.
-
-
 
 ## Edit App.js
 
