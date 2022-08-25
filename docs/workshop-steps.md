@@ -21,6 +21,7 @@
   * [Add a Treasure Chest Logic Check](#add-a-treasure-chest-logic-check)
 * [Refactor](#refactor)
 * [Check Your Work](#check-your-work)
+* [Still got a problem?](#still-got-a-problem)
 
 ---
 
@@ -32,8 +33,6 @@ Then go inside the folder.
 Once you are inside the folder, let's install the dependencies! Once for our backend, and again for our frontend!
 
 ```shell
-cd Downloads
-
 git clone https://github.com/sean-kintone/shepherd-react-tutorial
 
 cd shepherd-react-tutorial
@@ -107,7 +106,7 @@ Confused? 🤔 → Check out the [Get the API Token](https://youtu.be/pRtfn-8cf_
 
 ## Create a `.env` File
 
-Using the [.env.example](.env.example) file as a template, create a `.env` file. Then input your Kintone credentials like the following:
+Using the [.env.example](./../.env.example) file as a template, create a `.env` file. Then input your Kintone credentials like the following:
 
 ### `.env` Template <!-- omit in toc -->
 
@@ -120,13 +119,13 @@ APITOKEN = ""
 ### Example `.env` File <!-- omit in toc -->
 
 ```txt
-SUBDOMAIN = "devevents"
+SUBDOMAIN = "example"
 APPID = "1"
 APITOKEN = "dXNlckBleGFLtcGxlmNvbTpzZWNyZXQe9q3IhtcG"
 ```
 
-### ⚠️ DO NOT DELETE THE [.env.example](.env.example) FILE!  <!-- omit in toc -->
-[.env.example](.env.example) is used by env-cmd to verify that `.env` file is correctly configured.
+### ⚠️ DO NOT DELETE THE [.env.example](./../.env.example) FILE!  <!-- omit in toc -->
+[.env.example](./../.env.example) is used by env-cmd to verify that `.env` file is correctly configured.
 
 ---
 
@@ -514,9 +513,9 @@ In principle, we will try to:
 
 Is your code not working?
 
-Compare your [/frontend/src/App.js](../frontend/src/app.js), and [/frontend/src/content.js](../frontend/src/content.js) with the [completed versions](./finished_code/) to see if it is all written correctly.
+Compare your [/frontend/src/App.js](../frontend/src/App.js), and [/frontend/src/content.js](../frontend/src/content.js) with the [completed versions folder](./finished_code/) to see if it is all written correctly.
 
-Still got a problem?
+## Still got a problem?
 
 Check out README's [Debugging](../README.md#debugging---lets-fix-those-problems) section!
 
