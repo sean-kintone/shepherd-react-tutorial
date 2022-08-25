@@ -56,9 +56,7 @@ Let's create a **ShepherdJS Onboarding** Kintone App!
 This will keep track of two metrics for visitors to our site:
 
 1) Did Users complete the task?
-2) Did Users finished our onboarding?
-
-![images/kintone-app-setup.gif](images/kintone-app-setup.gif)
+2) Did Users finish our onboarding?
 
 Here are the required fields & their configurations for our workshop:
 
