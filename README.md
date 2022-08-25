@@ -51,6 +51,21 @@ npm install -g @kintone/customize-uploader
 | ------------------------------------------- | ------------------------------------------- |
 | ![Step 1: Fill out the Kintone Developer license sign up form](./docs/img/SignUp-1.png) | ![Step 2: Email address will be the login name & the subdomain will be your unique link](./docs/img/SignUp-2.png) |
 
+## Create a Kintone Web Database App
+
+## Kintone API Token
+
+To generate an API Token for a Kintone App:
+
+1. Go to the Kintone App
+2. Go to the Gear icon ⚙️ (top right corner) > Open the App Settings page
+3. Click on the **App Settings** Tab > Click on **API Token** settings
+4. Click the `Generate` button to generate a token
+5. Click the `Save` button (top left corner) to save the token setting
+6. Finally, click the `Update App` button (top right corner) to implement the token setting change.
+
+Confused? 🤔 → Check out the [Get the API Token](https://youtu.be/pRtfn-8cf_I?t=117) video clip 📺  
+
 ---
 
 ## Create a `.env` file
