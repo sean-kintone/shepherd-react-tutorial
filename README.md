@@ -9,17 +9,18 @@ Our free, live workshop will walk you through creating a Web Database App, setti
 
 ## Outline <!-- omit in toc -->
 * [Get Started](#get-started)
+  * [frontend & backend folders](#frontend--backend-folders)
 * [Get Your Free Kintone Database](#get-your-free-kintone-database)
 * [Create a Kintone Web Database App](#create-a-kintone-web-database-app)
 * [Kintone API Token](#kintone-api-token)
-* [Create a `.env` File for Your Credentials](#create-a-env-file-for-your-credentials)
-* [🤔 What is Shepherd.JS?](#-what-is-shepherdjs)
-* [⚙️ What is Kintone?](#️-what-is-kintone)
+* [Create a `.env` File](#create-a-env-file)
+* [Appendix](#appendix)
+  * [What is Shepherd.JS?](#what-is-shepherdjs)
+  * [What is Kintone?](#what-is-kintone)
 * [Debugging - Let's Fix Those Problems 💪](#debugging---lets-fix-those-problems-)
   * [Errors related to .env](#errors-related-to-env)
   * [`npm install` command is not working](#npm-install-command-is-not-working)
   * ["npm run upload" failed?](#npm-run-upload-failed)
-  * [Uncaught Error: Target container is not a DOM element](#uncaught-error-target-container-is-not-a-dom-element)
 
 ---
 
