@@ -9,7 +9,7 @@
 * [Kintone API Token](#kintone-api-token)
 * [Create a `.env` File](#create-a-env-file)
 * [Edit content.js](#edit-contentjs)
-  * [Add some fun HTML Elements](#add-some-fun-html-elements)
+  * [Add Some Fun HTML Elements](#add-some-fun-html-elements)
     * [Fruits](#fruits)
     * [Number Clicker](#number-clicker)
     * [Radio Button](#radio-button)
@@ -21,6 +21,8 @@
   * [Add a Treasure Chest Logic Check](#add-a-treasure-chest-logic-check)
 * [Refactor](#refactor)
 * [Check Your Work](#check-your-work)
+* [What about the Backend?](#what-about-the-backend)
+* [Still Got a Problem?](#still-got-a-problem)
 
 ---
 
@@ -32,8 +34,6 @@ Then go inside the folder.
 Once you are inside the folder, let's install the dependencies! Once for our backend, and again for our frontend!
 
 ```shell
-cd Downloads
-
 git clone https://github.com/sean-kintone/shepherd-react-tutorial
 
 cd shepherd-react-tutorial
@@ -107,7 +107,7 @@ Confused? 🤔 → Check out the [Get the API Token](https://youtu.be/pRtfn-8cf_
 
 ## Create a `.env` File
 
-Using the [.env.example](.env.example) file as a template, create a `.env` file. Then input your Kintone credentials like the following:
+Using the [.env.example](./../.env.example) file as a template, create a `.env` file. Then input your Kintone credentials like the following:
 
 ### `.env` Template <!-- omit in toc -->
 
@@ -120,13 +120,13 @@ APITOKEN = ""
 ### Example `.env` File <!-- omit in toc -->
 
 ```txt
-SUBDOMAIN = "devevents"
+SUBDOMAIN = "example"
 APPID = "1"
 APITOKEN = "dXNlckBleGFLtcGxlmNvbTpzZWNyZXQe9q3IhtcG"
 ```
 
-### ⚠️ DO NOT DELETE THE [.env.example](.env.example) FILE!  <!-- omit in toc -->
-[.env.example](.env.example) is used by env-cmd to verify that `.env` file is correctly configured.
+### ⚠️ DO NOT DELETE THE [.env.example](./../.env.example) FILE!  <!-- omit in toc -->
+[.env.example](./../.env.example) is used by env-cmd to verify that `.env` file is correctly configured.
 
 ---
 
@@ -164,7 +164,7 @@ We have three goals for our coding today:
 2. Create a ShepherdJS tour to onboard our users
 3. Refactor our code to be a little bit neater.
 
-### Add some fun HTML Elements
+### Add Some Fun HTML Elements
 
 First, let's look at [content.js](../frontend/src/content.js).  
 We have set up a 25 x 25 grid, using CSS grid.
@@ -299,7 +299,7 @@ Now that we have a fun app to play with, let's make a guided tour for our users 
 
 ### Build a Shepherd JS Tour
 
-We'll be referencing the [ShepherdJS documentation](https://shepherdjs.dev/docs/tutorial-02-usage.html), which tells us all we need to create steps for our workshop. Our steps need an ID, which HTML element we'll be attaching to, some buttons, a message, and finally a function which updates our tour progress, so we can keep track of it on our kintone app!
+We'll be referencing the [ShepherdJS documentation](https://shepherdjs.dev/docs/tutorial-02-usage.html), which tells us all we need to create steps for our workshop. Our steps need an ID, which HTML element we'll be attaching to, some buttons, a message, and finally a function which updates our tour progress, so we can keep track of it on our Kintone app!
 
 From [./content.js](../frontend/src/content.js):
 
@@ -514,9 +514,15 @@ In principle, we will try to:
 
 Is your code not working?
 
-Compare your [/frontend/src/App.js](../frontend/src/app.js), and [/frontend/src/content.js](../frontend/src/content.js) with the [completed versions](./finished_code/) to see if it is all written correctly.
+Compare your [/frontend/src/App.js](../frontend/src/App.js), and [/frontend/src/content.js](../frontend/src/content.js) with the [completed versions folder](./finished_code/) to see if it is all written correctly.
 
-Still got a problem?
+## What about the Backend?
+
+We are using the Express server setup as our backend. It is beyond the scope of this workshop but we went over it in our past React workshop:
+* YouTube: [React & REST API: GET & POST to a Web Database - July Workshop - YouTube](https://www.youtube.com/watch?v=LF2ue7ePgyU)
+* Codebase: [ahandsel/React_Workshop_by_Kintone](https://github.com/ahandsel/React_Workshop_by_Kintone)
+
+## Still Got a Problem?
 
 Check out README's [Debugging](../README.md#debugging---lets-fix-those-problems) section!
 
