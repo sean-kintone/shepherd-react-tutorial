@@ -5,7 +5,7 @@
 **Say goodbye to lost users!**  
 Onboarding is a valuable feature for your App's first-time users. 💪
 
-Our free, live workshop will walk you through creating a Web Database App, setting up a React project, and developing a tutorial guiding users through the App.
+Our free, live workshop will walk you through creating a Web Database App, setting up a React project, and developing a tutorial that guides users through the App.
 
 ## Outline <!-- omit in toc -->
 * [Get Started](#get-started)
@@ -62,9 +62,11 @@ Inside there should be two folders: `frontend` & `backend`
 * ⚡ Only use lowercase, numbers, & hyphens in your subdomain
 * ⚠ Do not use uppercase or special characters
 
-|                                                                                         |                                                                                                                   |
-| --------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| ![Step 1: Fill out the Kintone Developer license sign up form](./docs/img/SignUp-1.png) | ![Step 2: Email address will be the login name & the subdomain will be your unique link](./docs/img/SignUp-2.png) |
+|                                                                                            |                                                                                                                      |
+| ------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------- |
+| ![Step 1: Fill out the Kintone Developer license sign-up form](./docs/images/SignUp-1.png) | ![Step 2: Email address will be the login name & the subdomain will be your unique link](./docs/images/SignUp-2.png) |
+
+---
 
 ## Create a Kintone Web Database App
 
@@ -72,62 +74,70 @@ Let's create a **ShepherdJS Onboarding** Kintone App!
 This will keep track of two metrics for visitors to our site:
 
 1. Did users complete the task?
-1. Did users finished our onboarding?
+1. Did users finish our onboarding?
 
 Here are the required fields & their configurations for our workshop:
 
 | Field Type   | Field Name        | Field Code  | Note                                           |
 | ------------ | ----------------- | ----------- | ---------------------------------------------- |
-| Radio Button | Task Completed    | `completed` | Options: 'Yes' and 'No'                        |
-| Number       | Percent Completed | `percent`   | This will show onboarding tour completion rate |
+| Radio Button | Task Completed?   | `completed` | Options: `Yes` and `No`                        |
+| Number       | Percent Completed | `percent`   | This will show the onboarding tour completion rate |
 
 Be sure to click the **Save** and **Activate App** buttons! 💪
 
-Your Kintone app should look like this, with one `Radio Button` field, and one `Number` field:
+Your Kintone App should look like this, with one `Radio Button` field & one `Number` field:
 
 ![Kintone App Overview](./docs/images/1-1.png)
 
-Your `Radio Button` settings should look like this (⚠️notice the field code is lower case, `completed`, and your button options are Upper Case `'Yes'` and `'No'`⚠️):
+Your `Radio Button` settings should look like this (⚠️notice the field code is lowercase, `completed`, and your button options are title case `Yes` and `No` ⚠️):
 ![Radio Button Settings](./docs/images/1-2.png)
 
 And your `Number` field settings should like as so:
 ![Number Field Settings](./docs/images/1-3.png)
 
-Confused? 🤔 → Check out the [How to Create a Kintone Database App](https://youtu.be/pRtfn-8cf_I) video 📺
+Confused? 🤔 → Check out the gif below:
+
+<details>
+  <summary>Create a Kintone ShepherdJS Onboarding App Gif 📺</summary>
+
+  ![shepherd_CreateApp.gif](./docs/images/shepherd_CreateApp.gif)
+
+</details>
+
+---
 
 ## Kintone API Token
 
 To generate an API Token for a Kintone App:
 
 1. Go to the Kintone App
-2. Go to the Gear icon ⚙️ (top right corner) > Open the App Settings page
-3. Click on the **App Settings** Tab > Click on **API Token** settings
-4. Click the `Generate` button to generate a token
-5. Click the `Save` button (top left corner) to save the token setting
-6. Finally, click the `Update App` button (top right corner) to implement the token setting change.
+1. Go to the Gear icon ⚙️ (top right corner) > Open the App Settings page
+1. Click on the **App Settings** Tab > Click on **API Token** settings
+1. Click the `Generate` button to generate a token
+1. Enable the `Add records` and `Edit records` checkboxes
+1. Click the `Save` button (top left corner) to save the token setting
+1. Finally, click the `Update App` button (top right corner) to implement the token setting change.
 
-Confused? 🤔 → Check out the [Get the API Token](https://youtu.be/pRtfn-8cf_I?t=117) video clip 📺  
+Confused? 🤔 → Check out the gif below:
+
+<details>
+  <summary>Generate a Kintone API Token Gif 📺</summary>
+
+  ![shepherd_APIToken.gif](./docs/images/shepherd_APIToken.gif)
+
+</details>
 
 ---
 
 ## Create a `.env` File
 
-Using the [.env.example](.env.example) file as a template, create a `.env` file. Then input your Kintone credentials like the following:
-
-### `.env` Template <!-- omit in toc -->
-
-```txt
-SUBDOMAIN = ""
-APPID = ""
-APITOKEN = ""
-```
-
-### Example `.env` File <!-- omit in toc -->
+1. Using the [.env.example](.env.example) file as a template, create a `.env` file.
+1. Then input your Kintone credentials like the following:
 
 ```txt
-SUBDOMAIN = "devevents"
+SUBDOMAIN = "example"
 APPID = "1"
-APITOKEN = "dXNlckBleGFLtcGxlmNvbTpzZWNyZXQe9q3IhtcG"
+APITOKEN = "abcdefghijklmnopqrstuvwxyz"
 ```
 
 ### ⚠️ DO NOT DELETE THE [.env.example](.env.example) FILE!  <!-- omit in toc -->
@@ -149,7 +159,7 @@ Shepherd.JS is similar to other popular onboarding JS libraries such as Intro.JS
 
 Kintone is a no-code/low-code cloud platform for teams to quickly & easily share and collaborate on their data.
 
-You can add JavaScript, CSS, &/or HTML to enhance the front-end UI/UX of a Kintone App. This can include features such as maps, buttons, and color-coding.
+You can add JavaScript, CSS, &/or HTML to enhance the frontend UI/UX of a Kintone App. This can include features such as maps, buttons, and color-coding.
 
 Read up on how to customize and develop on the Kintone platform at [kintone.dev](https://kintone.dev/)
 

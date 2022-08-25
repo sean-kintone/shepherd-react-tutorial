@@ -1,7 +1,6 @@
 # Onboard like a PRO with Shepherd JS, React, and [Kintone Web Database](https://kintone.dev/en/)
 
 ## Outline <!-- omit in toc -->
-
 * [Get Started](#get-started)
   * [Inside backend](#inside-backend)
   * [Inside frontend](#inside-frontend)
@@ -20,9 +19,11 @@
     * [Button Config](#button-config)
   * [Add a Treasure Chest Logic Check](#add-a-treasure-chest-logic-check)
 * [Refactor](#refactor)
-* [Check Your Work](#check-your-work)
+* [Execute the Code](#execute-the-code)
+  * [Terminal 2 - Inside frontend](#terminal-2---inside-frontend)
+  * [Terminal 1 - Inside backend](#terminal-1---inside-backend)
 * [What about the Backend?](#what-about-the-backend)
-* [Still Got a Problem?](#still-got-a-problem)
+* [Code Not Working?](#code-not-working)
 
 ---
 
@@ -34,6 +35,8 @@ Then go inside the folder.
 Once you are inside the folder, let's install the dependencies! Once for our backend, and again for our frontend!
 
 ```shell
+cd Downloads
+
 git clone https://github.com/sean-kintone/shepherd-react-tutorial
 
 cd shepherd-react-tutorial
@@ -42,7 +45,7 @@ cd shepherd-react-tutorial
 ### Inside backend
 
 ```shell
-cd backend
+cd ~/Downloads/shepherd-react-tutorial/backend
 
 npm install
 
@@ -52,7 +55,7 @@ npm start
 ### Inside frontend
 
 ```shell
-cd ../frontend
+cd ~/Downloads/shepherd-react-tutorial/frontend
 
 npm install
 
@@ -67,13 +70,13 @@ Let's create a **ShepherdJS Onboarding** Kintone App!
 This will keep track of two metrics for visitors to our site:
 
 1. Did users complete the task?
-1. Did users finished our onboarding?
+1. Did users finish our onboarding?
 
 Here are the required fields & their configurations for our workshop:
 
 | Field Type   | Field Name        | Field Code  | Note                                           |
 | ------------ | ----------------- | ----------- | ---------------------------------------------- |
-| Radio Button | Task Completed    | `completed` | Options: 'Yes' and 'No'                        |
+| Radio Button | Task Completed?   | `completed` | Options: `Yes` and `No`                        |
 | Number       | Percent Completed | `percent`   | This will show onboarding tour completion rate |
 
 Be sure to click the **Save** and **Activate App** buttons! 💪
@@ -82,51 +85,59 @@ Your Kintone app should look like this, with one `Radio Button` field, and one `
 
 ![Kintone App Overview](./images/1-1.png)
 
-Your `Radio Button` settings should look like this (⚠️notice the field code is lower case, `completed`, and your button options are Upper Case `'Yes'` and `'No'`⚠️):
+Your `Radio Button` settings should look like this (⚠️notice the field code is lowercase, `completed`, and your button options are title case `Yes` and `No` ⚠️):
 ![Radio Button Settings](./images/1-2.png)
 
 And your `Number` field settings should like as so:
 ![Number Field Settings](./images/1-3.png)
 
-Confused? 🤔 → Check out the [How to Create a Kintone Database App](https://youtu.be/pRtfn-8cf_I) video 📺
+Confused? 🤔 → Check out the gif below:
+
+<details>
+  <summary>Create a Kintone ShepherdJS Onboarding App Gif 📺</summary>
+
+  ![shepherd_CreateApp.gif](./images/shepherd_CreateApp.gif)
+
+</details>
+
+---
 
 ## Kintone API Token
 
 To generate an API Token for a Kintone App:
 
 1. Go to the Kintone App
-2. Go to the Gear icon ⚙️ (top right corner) > Open the App Settings page
-3. Click on the **App Settings** Tab > Click on **API Token** settings
-4. Click the `Generate` button to generate a token
-5. Click the `Save` button (top left corner) to save the token setting
-6. Finally, click the `Update App` button (top right corner) to implement the token setting change.
+1. Go to the Gear icon ⚙️ (top right corner) > Open the App Settings page
+1. Click on the **App Settings** Tab > Click on **API Token** settings
+1. Click the `Generate` button to generate a token
+1. Enable the `Add records` and `Edit records` checkboxes
+1. Click the `Save` button (top left corner) to save the token setting
+1. Finally, click the `Update App` button (top right corner) to implement the token setting change.
 
-Confused? 🤔 → Check out the [Get the API Token](https://youtu.be/pRtfn-8cf_I?t=117) video clip 📺  
+Confused? 🤔 → Check out the gif below:
+
+<details>
+  <summary>Generate a Kintone API Token Gif 📺</summary>
+
+  ![shepherd_APIToken.gif](./images/shepherd_APIToken.gif)
+
+</details>
 
 ---
 
 ## Create a `.env` File
 
-Using the [.env.example](./../.env.example) file as a template, create a `.env` file. Then input your Kintone credentials like the following:
-
-### `.env` Template <!-- omit in toc -->
-
-```txt
-SUBDOMAIN = ""
-APPID = ""
-APITOKEN = ""
-```
-
-### Example `.env` File <!-- omit in toc -->
+1. Using the [.env.example](.env.example) file as a template, create a `.env` file.
+1. Then input your Kintone credentials like the following:
 
 ```txt
 SUBDOMAIN = "example"
 APPID = "1"
-APITOKEN = "dXNlckBleGFLtcGxlmNvbTpzZWNyZXQe9q3IhtcG"
+APITOKEN = "abcdefghijklmnopqrstuvwxyz"
 ```
 
-### ⚠️ DO NOT DELETE THE [.env.example](./../.env.example) FILE!  <!-- omit in toc -->
-[.env.example](./../.env.example) is used by env-cmd to verify that `.env` file is correctly configured.
+### ⚠️ DO NOT DELETE THE [.env.example](../.env.example) FILE!  <!-- omit in toc -->
+[.env.example](../.env.example) is used by env-cmd to verify that `.env` file is correctly configured.
 
 ---
 
@@ -140,7 +151,7 @@ For this project, just know that we've set up our API POST Logic here in [/front
 import PostRecord from './requests/postRecord.js';
 ...
     PostRecord({
-      completed: 'Yes',
+      completed: `Yes`,
       percent: 100
     });
 ...
@@ -292,6 +303,8 @@ Here we use a `ternary` operator, the `?` seen above. This is just a fancy way o
   <div className="grid-item" onClick={openTreasure}><Chest /></div>
 }}
 ```
+
+---
 
 ## Edit App.js
 
@@ -501,6 +514,8 @@ useEffect(() => {
 
 Now, whenever one of these variables changes, our `useEffect` hook will fire and check our treasure box logic for us. Very cool.
 
+---
+
 ## Refactor
 
 Refactoring is always a tricky subject -- How much is too much? When should I refactor? Is my refactoring making the code easier or harder to understand? These questions help developers make your team's life easier.
@@ -510,11 +525,27 @@ In principle, we will try to:
 2. Keep our constants in a constants folder
 3. Change hard-coded HTML etc into loops and smart-coded HTML, using the power of JSX.
 
-## Check Your Work
+---
 
-Is your code not working?
+## Execute the Code
 
-Compare your [/frontend/src/App.js](../frontend/src/App.js), and [/frontend/src/content.js](../frontend/src/content.js) with the [completed versions folder](./finished_code/) to see if it is all written correctly.
+If you have not done already, open two terminals and execute the `npm run start` from both `frontend` and `backend` folders.
+
+### Terminal 2 - Inside frontend
+
+```shell
+cd ~/Downloads/shepherd-react-tutorial/frontend
+npm start
+```
+
+### Terminal 1 - Inside backend
+
+```shell
+cd ~/Downloads/shepherd-react-tutorial/backend
+npm start
+```
+
+---
 
 ## What about the Backend?
 
@@ -522,11 +553,19 @@ We are using the Express server setup as our backend. It is beyond the scope of 
 * YouTube: [React & REST API: GET & POST to a Web Database - July Workshop - YouTube](https://www.youtube.com/watch?v=LF2ue7ePgyU)
 * Codebase: [ahandsel/React_Workshop_by_Kintone](https://github.com/ahandsel/React_Workshop_by_Kintone)
 
-## Still Got a Problem?
+---
+
+## Code Not Working?
+
+### Check Your Work <!-- omit in toc -->
+
+Compare your [/frontend/src/App.js](../frontend/src/App.js), and [/frontend/src/content.js](../frontend/src/content.js) with the [completed versions folder](./finished_code/) to see if it is all written correctly.
+
+### Still Got a Problem? <!-- omit in toc -->
 
 Check out README's [Debugging](../README.md#debugging---lets-fix-those-problems) section!
 
-And finally, post your Kintone customization questions over at our community forum:  
+And finally, post your Kintone questions over at our community forum:  
 [forum.kintone.dev](https://forum.kintone.dev/)
 
 Good luck coding! 💪
