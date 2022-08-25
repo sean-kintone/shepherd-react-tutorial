@@ -6,6 +6,7 @@
   * [Inside backend](#inside-backend)
   * [Inside frontend](#inside-frontend)
 * [Create a Kintone Web Database App](#create-a-kintone-web-database-app)
+* [Kintone API Token](#kintone-api-token)
 * [Create a `.env` file](#create-a-env-file)
 * [Edit content.js](#edit-contentjs)
   * [Add some fun HTML Elements](#add-some-fun-html-elements)
@@ -84,6 +85,19 @@ And your `Number` field settings should like as so:
 ![Number Field Settings](images/1-3.png)
 
 Confused? 🤔 → Check out the [How to Create a Kintone Database App](https://youtu.be/pRtfn-8cf_I) video 📺
+
+## Kintone API Token
+
+To generate an API Token for a Kintone App:
+
+1. Go to the Kintone App
+2. Go to the Gear icon ⚙️ (top right corner) > Open the App Settings page
+3. Click on the **App Settings** Tab > Click on **API Token** settings
+4. Click the `Generate` button to generate a token
+5. Click the `Save` button (top left corner) to save the token setting
+6. Finally, click the `Update App` button (top right corner) to implement the token setting change.
+
+Confused? 🤔 → Check out the [Get the API Token](https://youtu.be/pRtfn-8cf_I?t=117) video clip 📺  
 
 ## Create a `.env` file
 
