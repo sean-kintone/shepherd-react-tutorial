@@ -7,7 +7,13 @@ Onboarding is a valuable feature for your App's first-time users. 💪
 
 Our free, live workshop will walk you through creating a Web Database App, setting up a React project, and developing a tutorial guiding users through the App.
 
-🤫 _We also have a $25 Amazon gift card raffle at the end_ ~
+## Outline <!-- omit in toc -->
+* [Get Started](#get-started)
+* [📎 PREREQUISITES](#-prerequisites)
+  * [🚀 Getting your FREE Kintone Database](#-getting-your-free-kintone-database)
+* [Create a `.env` file](#create-a-env-file)
+* [🤔 What is Shepherd.JS?](#-what-is-shepherdjs)
+* [⚙️ What is Kintone?](#️-what-is-kintone)
 
 ---
 
