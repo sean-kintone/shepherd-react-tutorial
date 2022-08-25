@@ -26,7 +26,7 @@ Our free, live workshop will walk you through creating a Web Database App, setti
 
 ## Get Started
 
-First, let's clone the [sean-kintone/shepherd-react-tutorial](https://github.com/sean-kintone/shepherd-react-tutorial) repo!  🚀  
+First, clone the [sean-kintone/shepherd-react-tutorial](https://github.com/sean-kintone/shepherd-react-tutorial) repo!  🚀  
 Then go inside the folder.
 
 Once you are inside the folder, let's install the dependencies!
@@ -69,6 +69,33 @@ Inside there should be two folders: `frontend` & `backend`
 | ![Step 1: Fill out the Kintone Developer license sign up form](./docs/img/SignUp-1.png) | ![Step 2: Email address will be the login name & the subdomain will be your unique link](./docs/img/SignUp-2.png) |
 
 ## Create a Kintone Web Database App
+
+Let's create a **ShepherdJS Onboarding** Kintone App!  
+This will keep track of two metrics for visitors to our site:
+
+1. Did users complete the task?
+1. Did users finished our onboarding?
+
+Here are the required fields & their configurations for our workshop:
+
+| Field Type   | Field Name        | Field Code  | Note                                           |
+| ------------ | ----------------- | ----------- | ---------------------------------------------- |
+| Radio Button | Task Completed    | `completed` | Options: 'Yes' and 'No'                        |
+| Number       | Percent Completed | `percent`   | This will show onboarding tour completion rate |
+
+Be sure to click the **Save** and **Activate App** buttons! 💪
+
+Your Kintone app should look like this, with one `Radio Button` field, and one `Number` field:
+
+![Kintone App Overview](./docs/images/1-1.png)
+
+Your `Radio Button` settings should look like this (⚠️notice the field code is lower case, `completed`, and your button options are Upper Case `'Yes'` and `'No'`⚠️):
+![Radio Button Settings](./docs/images/1-2.png)
+
+And your `Number` field settings should like as so:
+![Number Field Settings](./docs/images/1-3.png)
+
+Confused? 🤔 → Check out the [How to Create a Kintone Database App](https://youtu.be/pRtfn-8cf_I) video 📺
 
 ## Kintone API Token
 
