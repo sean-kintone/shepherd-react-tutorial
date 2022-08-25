@@ -103,26 +103,22 @@ To generate an API Token for a Kintone App:
 
 Confused? 🤔 → Check out the [Get the API Token](https://youtu.be/pRtfn-8cf_I?t=117) video clip 📺  
 
----
 
 ## Create a `.env` File
 
 Using the [.env.example](./../.env.example) file as a template, create a `.env` file. Then input your Kintone credentials like the following:
 
-### `.env` Template <!-- omit in toc -->
+---
 
-```txt
-SUBDOMAIN = ""
-APPID = ""
-APITOKEN = ""
-```
+## Create a `.env` File
 
-### Example `.env` File <!-- omit in toc -->
+1. Using the [.env.example](.env.example) file as a template, create a `.env` file.
+1. Then input your Kintone credentials like the following:
 
 ```txt
 SUBDOMAIN = "example"
 APPID = "1"
-APITOKEN = "dXNlckBleGFLtcGxlmNvbTpzZWNyZXQe9q3IhtcG"
+APITOKEN = "abcdefghijklmnopqrstuvwxyz"
 ```
 
 ### ⚠️ DO NOT DELETE THE [.env.example](./../.env.example) FILE!  <!-- omit in toc -->
