@@ -36,10 +36,12 @@ cd Downloads
 git clone https://github.com/sean-kintone/shepherd-react-tutorial
 
 cd shepherd-react-tutorial
+```
 
-npm install
+Open the `shepherd-react-tutorial` folder in [VS Code](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_command-line)
 
-npm install -g @kintone/customize-uploader
+```shell
+code .
 ```
 
 ## Get Your Free Kintone Database
