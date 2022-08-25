@@ -4,7 +4,7 @@
 const express = require('express');
 const cors = require('cors');
 const fetch = require('node-fetch');
-const PORT = 5000;
+const PORT = 5050;
 const app = express();
 
 // Hide sensitive info in a .env file with dotenv
@@ -48,7 +48,7 @@ app.get('/getData', cors(corsOptions), async (req, res) => {
 /* Add a new route for a POST request using singleRecordEndpoint in the section below */
 // - - - - - - - START - - - - - - - -
 
-// This runs if a POST request calls for localhost:5000/postData
+// This runs if a POST request calls for localhost:5050/postData
 
 app.post('/postData', cors(corsOptions), async (req, res) => {
   const requestBody = {
