@@ -347,13 +347,78 @@ Lastly, in order to keep track of our users' onboarding experience, we'll be upl
 
 The `beforeShowPromise` parameter is an easy way to asynchronously run a function when a new step appears. Here, we are updating our `onboardingPercent` variable, via the `setOnboardingPercent` setter hook. Since our tour is three steps long, our first step will update it to 33%, our second, 66%, and the last step will update to 100%.
 
+We've filled out the first step in our three step tour, try to fill out steps 2 and 3 on your own, and check against the completed code here:
+
+```jsx
+  const steps = [
+    {
+      id: 'intro',
+      attachTo: { element: '.radio-buttons', on: 'right' },
+      buttons: buttonConfig,
+      scrollTo: true,
+      cancelIcon: {
+        enabled: true,
+      },
+      title: 'Step 1!',
+      text: ['Click Option 2'],
+      beforeShowPromise: function () {
+        return new Promise(function (resolve) {
+          setOnboardingPercent(33);
+          resolve();
+        });
+      },
+    },
+    {
+      id: '2',
+      attachTo: { element: '.button-clicker', on: 'right' },
+      buttons: buttonConfig,
+      scrollTo: true,
+      cancelIcon: {
+        enabled: true,
+      },
+      title: 'Step 2!',
+      text: ['Click Here 7 Times'],
+      beforeShowPromise: function () {
+        return new Promise(function (resolve) {
+          setOnboardingPercent(66);
+          resolve();
+        });
+      },
+    },
+    {
+      id: '3',
+      attachTo: { element: '.fruits', on: 'right' },
+      buttons: buttonConfig,
+      scrollTo: true,
+      cancelIcon: {
+        enabled: true,
+      },
+      title: 'Step 3!',
+      text: ['Pick Fig'],
+      beforeShowPromise: function () {
+        return new Promise(function (resolve) {
+          setOnboardingPercent(100);
+          resolve();
+        });
+      },
+    },
+  ];
+```
+
 ## Refactor
+
+Refactoring is always a tricky subject -- How much is too much? When should I refactor? Is my refactoring making the code easier or harder to understand? These questions help developers make your team's life easier.
+
+In principle, we will try to:
+1. Separate our code into re-usable components
+2. Keep our constants in a constants folder
+3. Change hard-coded HTML etc into loops and smart-coded HTML, using the power of JSX.
 
 ## Check Your Work
 
 Is your code not working?
 
-Compare your [./src/main.ts](../src/main.ts) with the [completed-code.md](./completed-code.md) to see if it is all written correctly.
+Compare your [/frontend/src/App.js](../frontend/src/app.js), and [/frontend/src/content.js](../frontend/src/content.js) with the [completed versions](./finished_code/) to see if it is all written correctly.
 
 Still got a problem?
 
