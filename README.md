@@ -41,9 +41,7 @@ npm install
 npm install -g @kintone/customize-uploader
 ```
 
-## 📎 PREREQUISITES
-
-### 🚀 Getting your FREE Kintone Database
+## Get Your Free Kintone Database
 
 [bit.ly/KDP_NEW](http://bit.ly/KDP_NEW)
 * ⚡ Only use lowercase, numbers, & hyphens in your subdomain
