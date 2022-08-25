@@ -87,13 +87,13 @@ Be sure to click the **Save** and **Activate App** buttons! 💪
 
 Your Kintone app should look like this, with one `Radio Button` field, and one `Number` field:
 
-![Kintone App Overview](images/1-1.png)
+![Kintone App Overview](./docs/images/1-1.png)
 
 Your `Radio Button` settings should look like this (⚠️notice the field code is lower case, `completed`, and your button options are Upper Case `'Yes'` and `'No'`⚠️):
-![Radio Button Settings](images/1-2.png)
+![Radio Button Settings](./docs/images/1-2.png)
 
 And your `Number` field settings should like as so:
-![Number Field Settings](images/1-3.png)
+![Number Field Settings](./docs/images/1-3.png)
 
 Confused? 🤔 → Check out the [How to Create a Kintone Database App](https://youtu.be/pRtfn-8cf_I) video 📺
 
