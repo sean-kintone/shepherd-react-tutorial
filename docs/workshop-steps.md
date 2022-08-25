@@ -250,7 +250,6 @@ Here we use a `ternary` operator, the `?` seen above. This is just a fancy way o
       }}
 ```
 
-
 ## Edit App.js
 
 Now that we have a fun app to play with, let's make a guided tour for our users in [/frontend/src/App.js](../frontend/src/App.js)
@@ -259,6 +258,48 @@ Now that we have a fun app to play with, let's make a guided tour for our users 
 
 We'll be referencing the [ShepherdJS documentation](https://shepherdjs.dev/docs/tutorial-02-usage.html), which tells us all we need to create steps for our workshop. Our steps need an ID, which HTML element we'll be attaching to, some buttons, a message, and finally a function which updates our tour progress, so we can keep track of it on our kintone app!
 
+From [./content.js](../frontend/src/content.js):
+```jsx
+<div className="radio-buttons">
+```
+Also, we specify to attach to the `right` of our element. You can specify `top`, `bottom`, `left`, and `right`.
+
+#### Steps
+
+Our app will have three steps in order to open our treasure box:
+
+1. Selecting `option 2` from our radio buttons
+2. Clicking our `number clicker` 7 times
+3. Selecting 'fig' from our `fruits` selector.
+
+You can change these conditions on your own to play around with the code. 💪
+
+##### Step 1
+
+```jsx
+  const steps = [
+    {
+      id: '1',
+      attachTo: { element: '.radio-buttons', on: 'right' },
+      buttons: buttonConfig,
+      scrollTo: true,
+      cancelIcon: {
+        enabled: true,
+      },
+      title: 'Step 1!',
+      text: ['Click Option 2'],
+      beforeShowPromise: function () {
+        return new Promise(function (resolve) {
+          setOnboardingPercent(33);
+          resolve();
+        });
+      },
+    },
+  ];
+```
+The `id` parameter is just for internal tracking. It can be used to return or skip to certain steps via code. We won't be using it directly today.
+
+The `attachTo` parameter tells our tour where our dialog boxes attach to. The first step, is for our radio buttons, which have a `className` of `radio-buttons`. 
 
 From [./content.js](../frontend/src/content.js):
 ```jsx
@@ -284,13 +325,27 @@ Our buttons for our tour get re-used, so we've 'refactored' them to a separate v
     }
   ]
 ```
-Lastly, and most important, we need to specify what our hints will display to guide our users through the app:
+Most importantly, we need to specify what our hints will display to guide our users through the app:
 
 ```jsx
       title: 'Step 1!',
       text: ['Click Option 2'],
 ```
 
+Here we've chosen Option 2 to be correct, but you can change this and customize your "puzzle" as you see fit!
+
+Lastly, in order to keep track of our users' onboarding experience, we'll be uploading the `onboard percent completion` stat to our Kintone Database. There are many ways to accomplish this, but ShepherdJS allows us to easily fire a custom function, whenever a step is displayed.
+
+```jsx
+      beforeShowPromise: function () {
+        return new Promise(function (resolve) {
+          setOnboardingPercent(33);
+          resolve();
+        });
+      },
+```
+
+The `beforeShowPromise` parameter is an easy way to asynchronously run a function when a new step appears. Here, we are updating our `onboardingPercent` variable, via the `setOnboardingPercent` setter hook. Since our tour is three steps long, our first step will update it to 33%, our second, 66%, and the last step will update to 100%.
 
 ## Refactor
 

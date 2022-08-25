@@ -1,6 +1,6 @@
 # Onboard Users Like a Wizard 🧙 with Shepherd.JS -- React Basics Tutorials
 
-![ShepherdJS Banner](./docs/img/ShepherdJS_Banner.png)
+![ShepherdJS Banner](./docs/images/ShepherdJS_Banner.png)
 
 **Say goodbye to lost users!**  
 Onboarding is a valuable feature for your App's first-time users. 💪
@@ -8,17 +8,18 @@ Onboarding is a valuable feature for your App's first-time users. 💪
 Our free, live workshop will walk you through creating a Web Database App, setting up a React project, and developing a tutorial guiding users through the App.
 
 ## Outline <!-- omit in toc -->
-* [Get Started](#get-started)
-* [📎 PREREQUISITES](#-prerequisites)
-  * [🚀 Getting your FREE Kintone Database](#-getting-your-free-kintone-database)
-* [Create a `.env` file](#create-a-env-file)
-* [🤔 What is Shepherd.JS?](#-what-is-shepherdjs)
-* [⚙️ What is Kintone?](#️-what-is-kintone)
-* [Debugging - Let's Fix Those Problems 💪](#debugging---lets-fix-those-problems-)
-  * [Errors related to .env](#errors-related-to-env)
-  * [`npm install` command is not working](#npm-install-command-is-not-working)
-  * ["npm run upload" failed?](#npm-run-upload-failed)
-  * [Uncaught Error: Target container is not a DOM element](#uncaught-error-target-container-is-not-a-dom-element)
+- [Onboard Users Like a Wizard 🧙 with Shepherd.JS -- React Basics Tutorials](#onboard-users-like-a-wizard--with-shepherdjs----react-basics-tutorials)
+  - [Get Started](#get-started)
+  - [📎 PREREQUISITES](#-prerequisites)
+    - [🚀 Getting your FREE Kintone Database](#-getting-your-free-kintone-database)
+  - [Create a `.env` file](#create-a-env-file)
+  - [🤔 What is Shepherd.JS?](#-what-is-shepherdjs)
+  - [⚙️ What is Kintone?](#️-what-is-kintone)
+  - [Debugging - Let's Fix Those Problems 💪](#debugging---lets-fix-those-problems-)
+    - [Errors related to .env](#errors-related-to-env)
+    - [`npm install` command is not working](#npm-install-command-is-not-working)
+    - ["npm run upload" failed?](#npm-run-upload-failed)
+    - [Uncaught Error: Target container is not a DOM element](#uncaught-error-target-container-is-not-a-dom-element)
 
 ---
 
@@ -50,7 +51,7 @@ npm install -g @kintone/customize-uploader
 
 |                                             |                                             |
 | ------------------------------------------- | ------------------------------------------- |
-| ![Step 1: Fill out the Kintone Developer license sign up form](./docs/img/SignUp-1.png) | ![Step 2: Email address will be the login name & the subdomain will be your unique link](./docs/img/SignUp-2.png) |
+| ![Step 1: Fill out the Kintone Developer license sign up form](./docs/images/SignUp-1.png) | ![Step 2: Email address will be the login name & the subdomain will be your unique link](./docs/images/SignUp-2.png) |
 
 ---
 
