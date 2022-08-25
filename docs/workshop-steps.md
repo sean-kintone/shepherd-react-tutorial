@@ -73,7 +73,7 @@ Here are the required fields & their configurations for our workshop:
 
 | Field Type   | Field Name        | Field Code  | Note                                           |
 | ------------ | ----------------- | ----------- | ---------------------------------------------- |
-| Radio Button | Task Completed    | `completed` | Options: 'Yes' and 'No'                        |
+| Radio Button | Task Completed?    | `completed` | Options: `Yes` and `No`                        |
 | Number       | Percent Completed | `percent`   | This will show onboarding tour completion rate |
 
 Be sure to click the **Save** and **Activate App** buttons! 💪
@@ -82,7 +82,7 @@ Your Kintone app should look like this, with one `Radio Button` field, and one `
 
 ![Kintone App Overview](./images/1-1.png)
 
-Your `Radio Button` settings should look like this (⚠️notice the field code is lower case, `completed`, and your button options are Upper Case `'Yes'` and `'No'`⚠️):
+Your `Radio Button` settings should look like this (⚠️notice the field code is lower case, `completed`, and your button options are title case `Yes` and `No` ⚠️):
 ![Radio Button Settings](./images/1-2.png)
 
 And your `Number` field settings should like as so:
@@ -95,18 +95,21 @@ Confused? 🤔 → Check out the [How to Create a Kintone Database App](https://
 To generate an API Token for a Kintone App:
 
 1. Go to the Kintone App
-2. Go to the Gear icon ⚙️ (top right corner) > Open the App Settings page
-3. Click on the **App Settings** Tab > Click on **API Token** settings
-4. Click the `Generate` button to generate a token
-5. Click the `Save` button (top left corner) to save the token setting
-6. Finally, click the `Update App` button (top right corner) to implement the token setting change.
+1. Go to the Gear icon ⚙️ (top right corner) > Open the App Settings page
+1. Click on the **App Settings** Tab > Click on **API Token** settings
+1. Click the `Generate` button to generate a token
+1. Check the `Add records` and `Edit records` checkboxes
+1. Click the `Save` button (top left corner) to save the token setting
+1. Finally, click the `Update App` button (top right corner) to implement the token setting change.
 
-Confused? 🤔 → Check out the [Get the API Token](https://youtu.be/pRtfn-8cf_I?t=117) video clip 📺  
+Confused? 🤔 → Check out the gif below:
 
+<details>
+  <summary>Generate a Kintone API Token Gif 📺</summary>
 
-## Create a `.env` File
+  ![shepherd_APIToken.gif](./images/shepherd_APIToken.gif)
 
-Using the [.env.example](./../.env.example) file as a template, create a `.env` file. Then input your Kintone credentials like the following:
+</details>
 
 ---
 
@@ -121,8 +124,8 @@ APPID = "1"
 APITOKEN = "abcdefghijklmnopqrstuvwxyz"
 ```
 
-### ⚠️ DO NOT DELETE THE [.env.example](./../.env.example) FILE!  <!-- omit in toc -->
-[.env.example](./../.env.example) is used by env-cmd to verify that `.env` file is correctly configured.
+### ⚠️ DO NOT DELETE THE [.env.example](.env.example) FILE!  <!-- omit in toc -->
+[.env.example](.env.example) is used by env-cmd to verify that `.env` file is correctly configured.
 
 ---
 
@@ -136,7 +139,7 @@ For this project, just know that we've set up our API POST Logic here in [/front
 import PostRecord from './requests/postRecord.js';
 ...
     PostRecord({
-      completed: 'Yes',
+      completed: `Yes`,
       percent: 100
     });
 ...

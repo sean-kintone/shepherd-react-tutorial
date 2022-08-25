@@ -62,8 +62,8 @@ Inside there should be two folders: `frontend` & `backend`
 * ⚡ Only use lowercase, numbers, & hyphens in your subdomain
 * ⚠ Do not use uppercase or special characters
 
-|                                                                                         |                                                                                                                   |
-| --------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+|                                                                                            |                                                                                                                      |
+| ------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------- |
 | ![Step 1: Fill out the Kintone Developer license sign up form](./docs/images/SignUp-1.png) | ![Step 2: Email address will be the login name & the subdomain will be your unique link](./docs/images/SignUp-2.png) |
 
 ## Create a Kintone Web Database App
@@ -78,7 +78,7 @@ Here are the required fields & their configurations for our workshop:
 
 | Field Type   | Field Name        | Field Code  | Note                                           |
 | ------------ | ----------------- | ----------- | ---------------------------------------------- |
-| Radio Button | Task Completed    | `completed` | Options: 'Yes' and 'No'                        |
+| Radio Button | Task Completed?   | `completed` | Options: `Yes` and `No`                        |
 | Number       | Percent Completed | `percent`   | This will show onboarding tour completion rate |
 
 Be sure to click the **Save** and **Activate App** buttons! 💪
@@ -87,7 +87,7 @@ Your Kintone app should look like this, with one `Radio Button` field, and one `
 
 ![Kintone App Overview](./docs/images/1-1.png)
 
-Your `Radio Button` settings should look like this (⚠️notice the field code is lower case, `completed`, and your button options are Upper Case `'Yes'` and `'No'`⚠️):
+Your `Radio Button` settings should look like this (⚠️notice the field code is lowercase, `completed`, and your button options are title case `Yes` and `No` ⚠️):
 ![Radio Button Settings](./docs/images/1-2.png)
 
 And your `Number` field settings should like as so:
@@ -100,16 +100,21 @@ Confused? 🤔 → Check out the [How to Create a Kintone Database App](https://
 To generate an API Token for a Kintone App:
 
 1. Go to the Kintone App
-2. Go to the Gear icon ⚙️ (top right corner) > Open the App Settings page
-3. Click on the **App Settings** Tab > Click on **API Token** settings
-4. Click the `Generate` button to generate a token
-5. Click the `Save` button (top left corner) to save the token setting
-6. Finally, click the `Update App` button (top right corner) to implement the token setting change.
+1. Go to the Gear icon ⚙️ (top right corner) > Open the App Settings page
+1. Click on the **App Settings** Tab > Click on **API Token** settings
+1. Click the `Generate` button to generate a token
+1. Check the `Add records` and `Edit records` checkboxes
+1. Click the `Save` button (top left corner) to save the token setting
+1. Finally, click the `Update App` button (top right corner) to implement the token setting change.
 
-Confused? 🤔 → Check out the [Get the API Token](https://youtu.be/pRtfn-8cf_I?t=117) video clip 📺  
+Confused? 🤔 → Check out the gif below:
 
+<details>
+  <summary>Generate a Kintone API Token Gif 📺</summary>
 
+  ![shepherd_APIToken.gif](./docs/images/shepherd_APIToken.gif)
 
+</details>
 
 ---
 
