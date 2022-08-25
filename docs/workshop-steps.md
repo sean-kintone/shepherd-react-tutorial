@@ -19,6 +19,9 @@
     * [Button Config](#button-config)
   * [Add a Treasure Chest Logic Check](#add-a-treasure-chest-logic-check)
 * [Refactor](#refactor)
+* [Execute the Code](#execute-the-code)
+  * [Terminal 2 - Inside frontend](#terminal-2---inside-frontend)
+  * [Terminal 1 - Inside backend](#terminal-1---inside-backend)
 * [What about the Backend?](#what-about-the-backend)
 * [Code Not Working?](#code-not-working)
 
@@ -524,8 +527,25 @@ In principle, we will try to:
 
 ---
 
+## Execute the Code
 
+If you have not done already, open two terminals and execute the `npm run start` from both `frontend` and `backend` folders.
 
+### Terminal 2 - Inside frontend
+
+```shell
+cd ~/Downloads/shepherd-react-tutorial/frontend
+npm start
+```
+
+### Terminal 1 - Inside backend
+
+```shell
+cd ~/Downloads/shepherd-react-tutorial/backend
+npm start
+```
+
+---
 
 ## What about the Backend?
 
