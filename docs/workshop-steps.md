@@ -34,6 +34,8 @@ Then go inside the folder.
 Once you are inside the folder, let's install the dependencies! Once for our backend, and again for our frontend!
 
 ```shell
+cd Downloads
+
 git clone https://github.com/sean-kintone/shepherd-react-tutorial
 
 cd shepherd-react-tutorial
@@ -42,7 +44,7 @@ cd shepherd-react-tutorial
 ### Inside backend
 
 ```shell
-cd backend
+cd ~/Downloads/shepherd-react-tutorial/backend
 
 npm install
 
@@ -52,7 +54,7 @@ npm start
 ### Inside frontend
 
 ```shell
-cd ../frontend
+cd ~/Downloads/shepherd-react-tutorial/frontend
 
 npm install
 
