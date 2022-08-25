@@ -24,9 +24,26 @@ const corsOptions = {
   origin: 'http://localhost:3000'
 };
 
+// Append a query parameter to the request endpoint
+// This query orders records by their Record_number in ascending order
+const parameters = 'query=order by Record_number asc';
+
 // Kintone's record(s) endpoints
+const multipleRecordsEndpoint = `https://${subdomain}.kintone.com/k/v1/records.json?app=${appID}&${parameters}`
 const singleRecordEndpoint = `https://${subdomain}.kintone.com/k/v1/record.json?app=${appID}`;
 
+// This route executes when a GET request lands on localhost:5050/getData
+app.get('/getData', cors(corsOptions), async (req, res) => {
+  const fetchOptions = {
+    method: 'GET',
+    headers: {
+      'X-Cybozu-API-Token': apiToken
+    }
+  }
+  const response = await fetch(multipleRecordsEndpoint, fetchOptions);
+  const jsonResponse = await response.json();
+  res.json(jsonResponse);
+});
 
 /* Add a new route for a POST request using singleRecordEndpoint in the section below */
 // - - - - - - - START - - - - - - - -
@@ -62,5 +79,5 @@ app.post('/postData', cors(corsOptions), async (req, res) => {
 // - - - - - - - END - - - - - - - -
 
 app.listen(PORT, () => {
-  console.log(`\n Backend server listening at http://localhost:${PORT} \n You can post new Kintone records at \n http://localhost:${PORT}/postData`);
+  console.log(`\n Backend server listening at http://localhost:${PORT} \n Confirm if Kintone records are being retrieved at \n http://localhost:${PORT}/getData`);
 });
