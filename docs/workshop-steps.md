@@ -82,7 +82,7 @@ Your Kintone app should look like this, with one `Radio Button` field, and one `
 
 ![Kintone App Overview](./images/1-1.png)
 
-Your `Radio Button` settings should look like this (⚠️notice the field code is lower case, `completed`, and your button options are title case `Yes` and `No` ⚠️):
+Your `Radio Button` settings should look like this (⚠️notice the field code is lowercase, `completed`, and your button options are title case `Yes` and `No` ⚠️):
 ![Radio Button Settings](./images/1-2.png)
 
 And your `Number` field settings should like as so:
