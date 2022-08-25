@@ -20,6 +20,7 @@
   * [Add a Treasure Chest Logic Check](#add-a-treasure-chest-logic-check)
 * [Refactor](#refactor)
 * [What about the Backend?](#what-about-the-backend)
+* [Code Not Working?](#code-not-working)
 
 ---
 
